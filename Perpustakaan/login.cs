@@ -38,15 +38,19 @@ namespace Perpustakaan
                 if (jabatan == 1)
                 {
                     MessageBox.Show("halo admin "+username);
+                    this.Hide();
+                    Formbuku fb = new Formbuku();
+                    fb.ShowDialog();
                 }
                 else
                 {
                     MessageBox.Show("halo staff "+username);
+                    this.Hide();
+                    pencarianbuku pb = new pencarianbuku();
+                    pb.ShowDialog();
                 }
                 //MessageBox.Show("berhasil login sebagai "+username+" dengan jabatan : "+reader["jabatan"]);
-                this.Hide();
-                Formbuku fb = new Formbuku();
-                fb.ShowDialog();
+               
              
             }
             else
