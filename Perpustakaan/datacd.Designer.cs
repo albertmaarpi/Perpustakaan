@@ -50,6 +50,8 @@
             this.txtjudul = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.txtrak = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,7 +79,7 @@
             // 
             // btnupdate
             // 
-            this.btnupdate.Location = new System.Drawing.Point(260, 292);
+            this.btnupdate.Location = new System.Drawing.Point(260, 317);
             this.btnupdate.Name = "btnupdate";
             this.btnupdate.Size = new System.Drawing.Size(75, 23);
             this.btnupdate.TabIndex = 74;
@@ -86,7 +88,7 @@
             // 
             // btninsert
             // 
-            this.btninsert.Location = new System.Drawing.Point(49, 292);
+            this.btninsert.Location = new System.Drawing.Point(49, 317);
             this.btninsert.Name = "btninsert";
             this.btninsert.Size = new System.Drawing.Size(75, 23);
             this.btninsert.TabIndex = 73;
@@ -250,11 +252,30 @@
             this.menuStrip1.TabIndex = 75;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // txtrak
+            // 
+            this.txtrak.Location = new System.Drawing.Point(146, 279);
+            this.txtrak.Name = "txtrak";
+            this.txtrak.Size = new System.Drawing.Size(132, 20);
+            this.txtrak.TabIndex = 78;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(83, 283);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(33, 16);
+            this.label7.TabIndex = 77;
+            this.label7.Text = "Rak";
+            // 
             // datacd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtrak);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btninsert);
@@ -307,5 +328,7 @@
         private System.Windows.Forms.TextBox txtjudul;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.TextBox txtrak;
+        private System.Windows.Forms.Label label7;
     }
 }

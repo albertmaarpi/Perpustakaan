@@ -61,6 +61,8 @@
             this.txtjudul = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtrak = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -191,7 +193,7 @@
             // 
             // rbketerangan
             // 
-            this.rbketerangan.Location = new System.Drawing.Point(455, 89);
+            this.rbketerangan.Location = new System.Drawing.Point(433, 89);
             this.rbketerangan.Name = "rbketerangan";
             this.rbketerangan.Size = new System.Drawing.Size(202, 70);
             this.rbketerangan.TabIndex = 77;
@@ -201,7 +203,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(366, 94);
+            this.label8.Location = new System.Drawing.Point(350, 90);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 16);
             this.label8.TabIndex = 76;
@@ -363,11 +365,31 @@
             this.menuStrip1.TabIndex = 61;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(63, 288);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(27, 16);
+            this.label13.TabIndex = 91;
+            this.label13.Text = "rak";
+            // 
+            // txtrak
+            // 
+            this.txtrak.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtrak.Location = new System.Drawing.Point(135, 283);
+            this.txtrak.Name = "txtrak";
+            this.txtrak.Size = new System.Drawing.Size(144, 21);
+            this.txtrak.TabIndex = 92;
+            // 
             // databukuta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtrak);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btninsert);
@@ -442,5 +464,7 @@
         private System.Windows.Forms.TextBox txtjudul;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtrak;
     }
 }
