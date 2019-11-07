@@ -16,5 +16,40 @@ namespace Perpustakaan
         {
             InitializeComponent();
         }
+
+        private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formbuku fb = new Formbuku();
+            if (fb.ShowDialog() == DialogResult.OK)
+            {
+                fb.ShowDialog();
+
+            }
+        }
+
+        private void bukuTAToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formbukuta fb = new Formbukuta();
+            if (fb.ShowDialog() == DialogResult.OK)
+            {
+                fb.ShowDialog();
+
+            }
+        }
+
+        private void cDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Formcd fc = new Formcd();
+            if (fc.ShowDialog() == DialogResult.OK)
+            {
+                fc.ShowDialog();
+
+            }
+        }
+
+        private void databuku_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

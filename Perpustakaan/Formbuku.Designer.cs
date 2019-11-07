@@ -99,12 +99,14 @@
             this.bukuTAToolStripMenuItem.Name = "bukuTAToolStripMenuItem";
             this.bukuTAToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.bukuTAToolStripMenuItem.Text = "Buku TA";
+            this.bukuTAToolStripMenuItem.Click += new System.EventHandler(this.bukuTAToolStripMenuItem_Click);
             // 
             // cDToolStripMenuItem
             // 
             this.cDToolStripMenuItem.Name = "cDToolStripMenuItem";
             this.cDToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.cDToolStripMenuItem.Text = "CD";
+            this.cDToolStripMenuItem.Click += new System.EventHandler(this.cDToolStripMenuItem_Click);
             // 
             // bukuToolStripMenuItem
             // 
@@ -123,6 +125,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // Formbuku
             // 
@@ -137,7 +140,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Formbuku";
-            this.Text = "Formbuku";
+            this.Text = "v";
+            this.Load += new System.EventHandler(this.Formbuku_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
