@@ -140,6 +140,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "Formcd";
             this.Text = "Formcd";
+            this.Load += new System.EventHandler(this.Formcd_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

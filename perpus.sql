@@ -43,11 +43,17 @@ CREATE TABLE `buku` (
   `keaslian` varchar(255) DEFAULT NULL,
   `kondisi` varchar(255) DEFAULT NULL,
   `id_buku` int(30) unsigned NOT NULL AUTO_INCREMENT,
+  `status` varchar(10) DEFAULT NULL,
+  `available` tinyint(2) DEFAULT NULL,
   PRIMARY KEY (`judul`,`id_buku`),
   KEY `id_buku` (`id_buku`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `buku` */
+
+insert  into `buku`(`judul`,`sub_judul`,`nomor_panggil`,`nama_DDC`,`subjek`,`pengarang`,`penerbit`,`kota_terbit`,`tahun_terbit`,`edisi`,`volume`,`ISBN`,`kode`,`harga`,`bahasa`,`halaman_romawi`,`halaman_arab`,`tinggi`,`keterangan`,`keaslian`,`kondisi`,`id_buku`,`status`,`available`) values 
+('haha','haha','haha','haha','haha','haha','haha','haha','2019-11-07 13:19:31','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha',1,NULL,NULL),
+('hehe','hehe','hehe','hehe','hehe','hehe','hehe','hehe','2019-11-07 13:33:31','hehe','hehe','hehe','hehe','hehe','hehe','hehe','e','h',NULL,NULL,NULL,2,NULL,NULL);
 
 /*Table structure for table `buku_ta` */
 
@@ -67,6 +73,7 @@ CREATE TABLE `buku_ta` (
   `penguji1` varchar(255) DEFAULT NULL,
   `penguji2` varchar(255) DEFAULT NULL,
   `penguji3` varchar(255) DEFAULT NULL,
+  `available` tinyint(2) DEFAULT NULL,
   PRIMARY KEY (`id_bukuta`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

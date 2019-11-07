@@ -30,10 +30,10 @@ namespace Perpustakaan
         private void Formbuku_Load(object sender, EventArgs e)
         {
             ds = new DataSet();
-            conn = new connection();        
+            conn = new connection();
             try
             {
-                string query = "Select judul from buku where 1=1";
+                string query = "Select * from buku where 1=1";
                 da = new MySqlDataAdapter(query, conn.myconnection());
                 da.Fill(ds, "buku");
                 dataGridView1.DataSource = ds.Tables["buku"];
@@ -47,6 +47,7 @@ namespace Perpustakaan
 
         private void bukuTAToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Formbukuta fb = new Formbukuta();
             if (fb.ShowDialog() == DialogResult.OK)
             {
@@ -57,12 +58,35 @@ namespace Perpustakaan
 
         private void cDToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Formcd fc = new Formcd();
             if (fc.ShowDialog() == DialogResult.OK)
             {
                 fc.ShowDialog();
-
             }
         }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            ds = new DataSet();
+            conn = new connection();
+            string query = "Select * from buku where 1=1";
+            try
+            {
+                query += " and judul='" + txtsearch.Text + "'";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+
+            da = new MySqlDataAdapter(query, conn.myconnection());
+          //ds.Tables["buku"].Clear();
+            da.Fill(ds, "buku");
+            dataGridView1.DataSource = ds.Tables["buku"];
+            dataGridView1.Refresh();
+        }
+            
+        
     }
 }

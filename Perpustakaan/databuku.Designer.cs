@@ -85,6 +85,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.txtkode = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.rbya = new System.Windows.Forms.RadioButton();
+            this.rbtidak = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -611,11 +614,46 @@
             this.label25.TabIndex = 110;
             this.label25.Text = "Kode";
             // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(51, 426);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(65, 16);
+            this.label26.TabIndex = 112;
+            this.label26.Text = "Available";
+            // 
+            // rbya
+            // 
+            this.rbya.AutoSize = true;
+            this.rbya.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbya.Location = new System.Drawing.Point(146, 425);
+            this.rbya.Name = "rbya";
+            this.rbya.Size = new System.Drawing.Size(36, 17);
+            this.rbya.TabIndex = 113;
+            this.rbya.Text = "ya";
+            this.rbya.UseVisualStyleBackColor = true;
+            // 
+            // rbtidak
+            // 
+            this.rbtidak.AutoSize = true;
+            this.rbtidak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbtidak.Location = new System.Drawing.Point(201, 426);
+            this.rbtidak.Name = "rbtidak";
+            this.rbtidak.Size = new System.Drawing.Size(48, 17);
+            this.rbtidak.TabIndex = 114;
+            this.rbtidak.Text = "tidak";
+            this.rbtidak.UseVisualStyleBackColor = true;
+            // 
             // databuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 480);
+            this.Controls.Add(this.rbtidak);
+            this.Controls.Add(this.rbya);
+            this.Controls.Add(this.label26);
             this.Controls.Add(this.txtkode);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
@@ -739,5 +777,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.TextBox txtkode;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.RadioButton rbya;
+        private System.Windows.Forms.RadioButton rbtidak;
     }
 }
