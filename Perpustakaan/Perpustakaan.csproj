@@ -48,6 +48,42 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="connection.cs" />
+    <Compile Include="databuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="databuku.Designer.cs">
+      <DependentUpon>databuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="databukuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="databukuta.Designer.cs">
+      <DependentUpon>databukuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datacd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datacd.Designer.cs">
+      <DependentUpon>datacd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formbuku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formbuku.Designer.cs">
+      <DependentUpon>Formbuku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formbukuta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formbukuta.Designer.cs">
+      <DependentUpon>Formbukuta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formcd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formcd.Designer.cs">
+      <DependentUpon>Formcd.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +128,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="databuku.resx">
+      <DependentUpon>databuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="databukuta.resx">
+      <DependentUpon>databukuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datacd.resx">
+      <DependentUpon>datacd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formbuku.resx">
+      <DependentUpon>Formbuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formbukuta.resx">
+      <DependentUpon>Formbukuta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formcd.resx">
+      <DependentUpon>Formcd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
