@@ -27,8 +27,8 @@ namespace Perpustakaan
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string username = textBox1.Text;
-            string password = textBox2.Text;
+            string username = tbpassword.Text;
+            string password = tbusername.Text;
             MySqlCommand cmd = new MySqlCommand("select * from userperpus where username='"+username+"' and password='"+password+"'",this.conn.myconnection());
             MySqlDataReader reader = cmd.ExecuteReader();
             

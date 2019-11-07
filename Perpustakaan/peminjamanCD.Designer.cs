@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbldenda = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnkembalikan = new System.Windows.Forms.Button();
+            this.btnbayar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnsearch = new System.Windows.Forms.Button();
+            this.btnpinjam = new System.Windows.Forms.Button();
+            this.tbkode = new System.Windows.Forms.TextBox();
+            this.tbnrp = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnperpanjang = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label5
+            // lbldenda
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(118, 491);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(132, 25);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "Rp.1xx.xxx,xx";
+            this.lbldenda.AutoSize = true;
+            this.lbldenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lbldenda.Location = new System.Drawing.Point(118, 491);
+            this.lbldenda.Name = "lbldenda";
+            this.lbldenda.Size = new System.Drawing.Size(132, 25);
+            this.lbldenda.TabIndex = 37;
+            this.lbldenda.Text = "Rp.1xx.xxx,xx";
             // 
             // label4
             // 
@@ -64,23 +64,23 @@
             this.label4.TabIndex = 36;
             this.label4.Text = "denda :";
             // 
-            // button5
+            // btnkembalikan
             // 
-            this.button5.Location = new System.Drawing.Point(533, 483);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(87, 33);
-            this.button5.TabIndex = 35;
-            this.button5.Text = "kembalikan";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnkembalikan.Location = new System.Drawing.Point(533, 483);
+            this.btnkembalikan.Name = "btnkembalikan";
+            this.btnkembalikan.Size = new System.Drawing.Size(87, 33);
+            this.btnkembalikan.TabIndex = 35;
+            this.btnkembalikan.Text = "kembalikan";
+            this.btnkembalikan.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnbayar
             // 
-            this.button3.Location = new System.Drawing.Point(305, 483);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 33);
-            this.button3.TabIndex = 34;
-            this.button3.Text = "telah dibayar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnbayar.Location = new System.Drawing.Point(305, 483);
+            this.btnbayar.Name = "btnbayar";
+            this.btnbayar.Size = new System.Drawing.Size(110, 33);
+            this.btnbayar.TabIndex = 34;
+            this.btnbayar.Text = "telah dibayar";
+            this.btnbayar.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -91,37 +91,38 @@
             this.dataGridView1.Size = new System.Drawing.Size(581, 282);
             this.dataGridView1.TabIndex = 33;
             // 
-            // button2
+            // btnsearch
             // 
-            this.button2.Location = new System.Drawing.Point(313, 146);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(83, 33);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "search";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnsearch.Location = new System.Drawing.Point(313, 146);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(83, 33);
+            this.btnsearch.TabIndex = 32;
+            this.btnsearch.Text = "search";
+            this.btnsearch.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnpinjam
             // 
-            this.button1.Location = new System.Drawing.Point(222, 146);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 33);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "pinjam";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnpinjam.Location = new System.Drawing.Point(222, 146);
+            this.btnpinjam.Name = "btnpinjam";
+            this.btnpinjam.Size = new System.Drawing.Size(85, 33);
+            this.btnpinjam.TabIndex = 31;
+            this.btnpinjam.Text = "pinjam";
+            this.btnpinjam.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // tbkode
             // 
-            this.textBox2.Location = new System.Drawing.Point(185, 118);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(211, 22);
-            this.textBox2.TabIndex = 30;
+            this.tbkode.Location = new System.Drawing.Point(185, 118);
+            this.tbkode.Name = "tbkode";
+            this.tbkode.Size = new System.Drawing.Size(211, 22);
+            this.tbkode.TabIndex = 30;
             // 
-            // textBox1
+            // tbnrp
             // 
-            this.textBox1.Location = new System.Drawing.Point(185, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(211, 22);
-            this.textBox1.TabIndex = 29;
+            this.tbnrp.Location = new System.Drawing.Point(185, 90);
+            this.tbnrp.Name = "tbnrp";
+            this.tbnrp.Size = new System.Drawing.Size(211, 22);
+            this.tbnrp.TabIndex = 29;
+            this.tbnrp.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -153,30 +154,30 @@
             this.label1.TabIndex = 26;
             this.label1.Text = "Peminjaman CD";
             // 
-            // button4
+            // btnperpanjang
             // 
-            this.button4.Location = new System.Drawing.Point(421, 483);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(106, 33);
-            this.button4.TabIndex = 38;
-            this.button4.Text = "perpanjangan";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnperpanjang.Location = new System.Drawing.Point(421, 483);
+            this.btnperpanjang.Name = "btnperpanjang";
+            this.btnperpanjang.Size = new System.Drawing.Size(106, 33);
+            this.btnperpanjang.TabIndex = 38;
+            this.btnperpanjang.Text = "perpanjangan";
+            this.btnperpanjang.UseVisualStyleBackColor = true;
             // 
             // peminjamanCD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(653, 539);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.btnperpanjang);
+            this.Controls.Add(this.lbldenda);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnkembalikan);
+            this.Controls.Add(this.btnbayar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnsearch);
+            this.Controls.Add(this.btnpinjam);
+            this.Controls.Add(this.tbkode);
+            this.Controls.Add(this.tbnrp);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -190,18 +191,18 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbldenda;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnkembalikan;
+        private System.Windows.Forms.Button btnbayar;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnsearch;
+        private System.Windows.Forms.Button btnpinjam;
+        private System.Windows.Forms.TextBox tbkode;
+        private System.Windows.Forms.TextBox tbnrp;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnperpanjang;
     }
 }
