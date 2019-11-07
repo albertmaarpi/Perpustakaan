@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.tbpencarian = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,23 +40,17 @@
             this.bukuTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.judul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pengarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pembimbing = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tahun = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.available = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.peminjam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.haripinjam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.harikembali = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label1.Location = new System.Drawing.Point(508, 2);
+            this.label1.Location = new System.Drawing.Point(404, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(292, 46);
             this.label1.TabIndex = 0;
@@ -110,6 +105,7 @@
             this.btnsearch.TabIndex = 5;
             this.btnsearch.Text = "search";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // menuStrip1
             // 
@@ -144,61 +140,14 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.judul,
-            this.pengarang,
-            this.pembimbing,
-            this.tahun,
-            this.available,
-            this.peminjam,
-            this.haripinjam,
-            this.harikembali});
+            this.dataGridView1.DataSource = this.bindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(76, 109);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(846, 312);
             this.dataGridView1.TabIndex = 15;
-            // 
-            // judul
-            // 
-            this.judul.HeaderText = "judul";
-            this.judul.Name = "judul";
-            // 
-            // pengarang
-            // 
-            this.pengarang.HeaderText = "pengarang";
-            this.pengarang.Name = "pengarang";
-            // 
-            // pembimbing
-            // 
-            this.pembimbing.HeaderText = "pembimbing";
-            this.pembimbing.Name = "pembimbing";
-            // 
-            // tahun
-            // 
-            this.tahun.HeaderText = "tahun";
-            this.tahun.Name = "tahun";
-            // 
-            // available
-            // 
-            this.available.HeaderText = "available";
-            this.available.Name = "available";
-            // 
-            // peminjam
-            // 
-            this.peminjam.HeaderText = "peminjam";
-            this.peminjam.Name = "peminjam";
-            // 
-            // haripinjam
-            // 
-            this.haripinjam.HeaderText = "hari peminjaman";
-            this.haripinjam.Name = "haripinjam";
-            // 
-            // harikembali
-            // 
-            this.harikembali.HeaderText = "hari pengembalian";
-            this.harikembali.Name = "harikembali";
             // 
             // pencarianbuku
             // 
@@ -220,6 +169,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,14 +188,7 @@
         private System.Windows.Forms.ToolStripMenuItem bukuTAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cDToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn judul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pengarang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pembimbing;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tahun;
-        private System.Windows.Forms.DataGridViewTextBoxColumn available;
-        private System.Windows.Forms.DataGridViewTextBoxColumn peminjam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn haripinjam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn harikembali;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }
 

@@ -35,14 +35,6 @@
             this.tbpencarian = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.judul = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pengarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pembimbing = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tahun = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.available = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.peminjam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.haripinjam = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.harikembali = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bukuTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -112,60 +104,11 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.judul,
-            this.pengarang,
-            this.pembimbing,
-            this.tahun,
-            this.available,
-            this.peminjam,
-            this.haripinjam,
-            this.harikembali});
             this.dataGridView1.Location = new System.Drawing.Point(12, 140);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(846, 312);
             this.dataGridView1.TabIndex = 23;
-            // 
-            // judul
-            // 
-            this.judul.HeaderText = "judul";
-            this.judul.Name = "judul";
-            // 
-            // pengarang
-            // 
-            this.pengarang.HeaderText = "pengarang";
-            this.pengarang.Name = "pengarang";
-            // 
-            // pembimbing
-            // 
-            this.pembimbing.HeaderText = "pembimbing";
-            this.pembimbing.Name = "pembimbing";
-            // 
-            // tahun
-            // 
-            this.tahun.HeaderText = "tahun";
-            this.tahun.Name = "tahun";
-            // 
-            // available
-            // 
-            this.available.HeaderText = "available";
-            this.available.Name = "available";
-            // 
-            // peminjam
-            // 
-            this.peminjam.HeaderText = "peminjam";
-            this.peminjam.Name = "peminjam";
-            // 
-            // haripinjam
-            // 
-            this.haripinjam.HeaderText = "hari peminjaman";
-            this.haripinjam.Name = "haripinjam";
-            // 
-            // harikembali
-            // 
-            this.harikembali.HeaderText = "hari pengembalian";
-            this.harikembali.Name = "harikembali";
             // 
             // menuStrip1
             // 
@@ -229,14 +172,6 @@
         private System.Windows.Forms.TextBox tbpencarian;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn judul;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pengarang;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pembimbing;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tahun;
-        private System.Windows.Forms.DataGridViewTextBoxColumn available;
-        private System.Windows.Forms.DataGridViewTextBoxColumn peminjam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn haripinjam;
-        private System.Windows.Forms.DataGridViewTextBoxColumn harikembali;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bukuTAToolStripMenuItem;
