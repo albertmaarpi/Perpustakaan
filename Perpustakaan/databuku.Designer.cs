@@ -106,7 +106,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(542, 446);
+            this.button2.Location = new System.Drawing.Point(525, 451);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 107;
@@ -115,7 +115,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(438, 446);
+            this.button1.Location = new System.Drawing.Point(421, 451);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 106;
@@ -142,7 +142,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(424, 317);
+            this.richTextBox1.Location = new System.Drawing.Point(407, 322);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(200, 123);
             this.richTextBox1.TabIndex = 103;
@@ -152,7 +152,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(317, 318);
+            this.label23.Location = new System.Drawing.Point(300, 323);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(77, 16);
             this.label23.TabIndex = 102;
@@ -160,7 +160,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(438, 287);
+            this.dateTimePicker1.Location = new System.Drawing.Point(421, 292);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 101;
@@ -169,7 +169,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(304, 287);
+            this.label22.Location = new System.Drawing.Point(287, 292);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(104, 16);
             this.label22.TabIndex = 100;
@@ -215,7 +215,7 @@
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton5.Location = new System.Drawing.Point(576, 258);
+            this.radioButton5.Location = new System.Drawing.Point(559, 263);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(55, 17);
             this.radioButton5.TabIndex = 95;
@@ -226,7 +226,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton3.Location = new System.Drawing.Point(514, 259);
+            this.radioButton3.Location = new System.Drawing.Point(497, 264);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(56, 17);
             this.radioButton3.TabIndex = 94;
@@ -237,7 +237,7 @@
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton4.Location = new System.Drawing.Point(438, 259);
+            this.radioButton4.Location = new System.Drawing.Point(421, 264);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(46, 17);
             this.radioButton4.TabIndex = 93;
@@ -248,7 +248,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(356, 260);
+            this.label21.Location = new System.Drawing.Point(339, 265);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(52, 16);
             this.label21.TabIndex = 92;
@@ -258,7 +258,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton2.Location = new System.Drawing.Point(514, 236);
+            this.radioButton2.Location = new System.Drawing.Point(497, 241);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(76, 17);
             this.radioButton2.TabIndex = 91;
@@ -269,7 +269,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton1.Location = new System.Drawing.Point(438, 236);
+            this.radioButton1.Location = new System.Drawing.Point(421, 241);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(68, 17);
             this.radioButton1.TabIndex = 90;
@@ -280,7 +280,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(363, 237);
+            this.label20.Location = new System.Drawing.Point(346, 242);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(45, 16);
             this.label20.TabIndex = 89;
@@ -346,7 +346,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(299, 224);
+            this.label17.Location = new System.Drawing.Point(323, 160);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(109, 16);
             this.label17.TabIndex = 83;
