@@ -29,36 +29,36 @@
         private void InitializeComponent()
         {
             this.label12 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btninsert = new System.Windows.Forms.Button();
+            this.cbpenguji3 = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cbpenguji2 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cbpenguji1 = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rbhilang = new System.Windows.Forms.RadioButton();
+            this.rbrusak = new System.Windows.Forms.RadioButton();
+            this.rbbaik = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rbketerangan = new System.Windows.Forms.RichTextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtabstrak = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbtahun = new System.Windows.Forms.ComboBox();
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bukuTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbcopembimbing = new System.Windows.Forms.ComboBox();
+            this.cbpembimbing = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtnrp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtpengarang = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtjudul = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip1.SuspendLayout();
@@ -74,31 +74,31 @@
             this.label12.TabIndex = 90;
             this.label12.Text = "Buku TA";
             // 
-            // button2
+            // btnupdate
             // 
-            this.button2.Location = new System.Drawing.Point(509, 298);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 89;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnupdate.Location = new System.Drawing.Point(509, 298);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnupdate.TabIndex = 89;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btninsert
             // 
-            this.button1.Location = new System.Drawing.Point(394, 298);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 88;
-            this.button1.Text = "Insert";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btninsert.Location = new System.Drawing.Point(394, 298);
+            this.btninsert.Name = "btninsert";
+            this.btninsert.Size = new System.Drawing.Size(75, 23);
+            this.btninsert.TabIndex = 88;
+            this.btninsert.Text = "Insert";
+            this.btninsert.UseVisualStyleBackColor = true;
             // 
-            // comboBox6
+            // cbpenguji3
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(457, 252);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(144, 21);
-            this.comboBox6.TabIndex = 87;
+            this.cbpenguji3.FormattingEnabled = true;
+            this.cbpenguji3.Location = new System.Drawing.Point(457, 252);
+            this.cbpenguji3.Name = "cbpenguji3";
+            this.cbpenguji3.Size = new System.Drawing.Size(144, 21);
+            this.cbpenguji3.TabIndex = 87;
             // 
             // label11
             // 
@@ -110,13 +110,13 @@
             this.label11.TabIndex = 86;
             this.label11.Text = "Penguji";
             // 
-            // comboBox5
+            // cbpenguji2
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(457, 225);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(144, 21);
-            this.comboBox5.TabIndex = 85;
+            this.cbpenguji2.FormattingEnabled = true;
+            this.cbpenguji2.Location = new System.Drawing.Point(457, 225);
+            this.cbpenguji2.Name = "cbpenguji2";
+            this.cbpenguji2.Size = new System.Drawing.Size(144, 21);
+            this.cbpenguji2.TabIndex = 85;
             // 
             // label10
             // 
@@ -128,13 +128,13 @@
             this.label10.TabIndex = 84;
             this.label10.Text = "Penguji";
             // 
-            // comboBox4
+            // cbpenguji1
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(457, 198);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(144, 21);
-            this.comboBox4.TabIndex = 83;
+            this.cbpenguji1.FormattingEnabled = true;
+            this.cbpenguji1.Location = new System.Drawing.Point(457, 198);
+            this.cbpenguji1.Name = "cbpenguji1";
+            this.cbpenguji1.Size = new System.Drawing.Size(144, 21);
+            this.cbpenguji1.TabIndex = 83;
             // 
             // label9
             // 
@@ -146,38 +146,38 @@
             this.label9.TabIndex = 82;
             this.label9.Text = "Penguji";
             // 
-            // radioButton5
+            // rbhilang
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton5.Location = new System.Drawing.Point(571, 166);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(55, 17);
-            this.radioButton5.TabIndex = 81;
-            this.radioButton5.Text = "Hilang";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbhilang.AutoSize = true;
+            this.rbhilang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbhilang.Location = new System.Drawing.Point(571, 166);
+            this.rbhilang.Name = "rbhilang";
+            this.rbhilang.Size = new System.Drawing.Size(55, 17);
+            this.rbhilang.TabIndex = 81;
+            this.rbhilang.Text = "Hilang";
+            this.rbhilang.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbrusak
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton3.Location = new System.Drawing.Point(509, 165);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(56, 17);
-            this.radioButton3.TabIndex = 80;
-            this.radioButton3.Text = "Rusak";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbrusak.AutoSize = true;
+            this.rbrusak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbrusak.Location = new System.Drawing.Point(509, 165);
+            this.rbrusak.Name = "rbrusak";
+            this.rbrusak.Size = new System.Drawing.Size(56, 17);
+            this.rbrusak.TabIndex = 80;
+            this.rbrusak.Text = "Rusak";
+            this.rbrusak.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbbaik
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton4.Location = new System.Drawing.Point(457, 165);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(46, 17);
-            this.radioButton4.TabIndex = 79;
-            this.radioButton4.Text = "Baik";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbbaik.AutoSize = true;
+            this.rbbaik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbbaik.Location = new System.Drawing.Point(457, 165);
+            this.rbbaik.Name = "rbbaik";
+            this.rbbaik.Size = new System.Drawing.Size(46, 17);
+            this.rbbaik.TabIndex = 79;
+            this.rbbaik.Text = "Baik";
+            this.rbbaik.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -189,13 +189,13 @@
             this.label21.TabIndex = 78;
             this.label21.Text = "Kondisi";
             // 
-            // richTextBox1
+            // rbketerangan
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(455, 89);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(202, 70);
-            this.richTextBox1.TabIndex = 77;
-            this.richTextBox1.Text = "";
+            this.rbketerangan.Location = new System.Drawing.Point(455, 89);
+            this.rbketerangan.Name = "rbketerangan";
+            this.rbketerangan.Size = new System.Drawing.Size(202, 70);
+            this.rbketerangan.TabIndex = 77;
+            this.rbketerangan.Text = "";
             // 
             // label8
             // 
@@ -207,13 +207,13 @@
             this.label8.TabIndex = 76;
             this.label8.Text = "Keterangan";
             // 
-            // textBox3
+            // txtabstrak
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox3.Location = new System.Drawing.Point(135, 251);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(144, 21);
-            this.textBox3.TabIndex = 75;
+            this.txtabstrak.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtabstrak.Location = new System.Drawing.Point(135, 251);
+            this.txtabstrak.Name = "txtabstrak";
+            this.txtabstrak.Size = new System.Drawing.Size(144, 21);
+            this.txtabstrak.TabIndex = 75;
             // 
             // label7
             // 
@@ -225,13 +225,13 @@
             this.label7.TabIndex = 74;
             this.label7.Text = "Abstrak";
             // 
-            // comboBox3
+            // cbtahun
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(135, 224);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(144, 21);
-            this.comboBox3.TabIndex = 73;
+            this.cbtahun.FormattingEnabled = true;
+            this.cbtahun.Location = new System.Drawing.Point(135, 224);
+            this.cbtahun.Name = "cbtahun";
+            this.cbtahun.Size = new System.Drawing.Size(144, 21);
+            this.cbtahun.TabIndex = 73;
             // 
             // bukuToolStripMenuItem
             // 
@@ -261,21 +261,21 @@
             this.label5.TabIndex = 72;
             this.label5.Text = "Tahun";
             // 
-            // comboBox2
+            // cbcopembimbing
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(135, 197);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(144, 21);
-            this.comboBox2.TabIndex = 71;
+            this.cbcopembimbing.FormattingEnabled = true;
+            this.cbcopembimbing.Location = new System.Drawing.Point(135, 197);
+            this.cbcopembimbing.Name = "cbcopembimbing";
+            this.cbcopembimbing.Size = new System.Drawing.Size(144, 21);
+            this.cbcopembimbing.TabIndex = 71;
             // 
-            // comboBox1
+            // cbpembimbing
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(135, 170);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(144, 21);
-            this.comboBox1.TabIndex = 70;
+            this.cbpembimbing.FormattingEnabled = true;
+            this.cbpembimbing.Location = new System.Drawing.Point(135, 170);
+            this.cbpembimbing.Name = "cbpembimbing";
+            this.cbpembimbing.Size = new System.Drawing.Size(144, 21);
+            this.cbpembimbing.TabIndex = 70;
             // 
             // label3
             // 
@@ -297,13 +297,13 @@
             this.label4.TabIndex = 68;
             this.label4.Text = "Pembimbing";
             // 
-            // textBox2
+            // txtnrp
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox2.Location = new System.Drawing.Point(135, 143);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(144, 21);
-            this.textBox2.TabIndex = 67;
+            this.txtnrp.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtnrp.Location = new System.Drawing.Point(135, 143);
+            this.txtnrp.Name = "txtnrp";
+            this.txtnrp.Size = new System.Drawing.Size(144, 21);
+            this.txtnrp.TabIndex = 67;
             // 
             // label2
             // 
@@ -315,13 +315,13 @@
             this.label2.TabIndex = 66;
             this.label2.Text = "NRP";
             // 
-            // textBox5
+            // txtpengarang
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox5.Location = new System.Drawing.Point(135, 116);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(144, 21);
-            this.textBox5.TabIndex = 65;
+            this.txtpengarang.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtpengarang.Location = new System.Drawing.Point(135, 116);
+            this.txtpengarang.Name = "txtpengarang";
+            this.txtpengarang.Size = new System.Drawing.Size(144, 21);
+            this.txtpengarang.TabIndex = 65;
             // 
             // label6
             // 
@@ -333,13 +333,13 @@
             this.label6.TabIndex = 64;
             this.label6.Text = "Pengarang";
             // 
-            // textBox1
+            // txtjudul
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox1.Location = new System.Drawing.Point(135, 89);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 21);
-            this.textBox1.TabIndex = 63;
+            this.txtjudul.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtjudul.Location = new System.Drawing.Point(135, 89);
+            this.txtjudul.Name = "txtjudul";
+            this.txtjudul.Size = new System.Drawing.Size(144, 21);
+            this.txtjudul.TabIndex = 63;
             // 
             // label1
             // 
@@ -369,33 +369,33 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.btninsert);
+            this.Controls.Add(this.cbpenguji3);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.comboBox5);
+            this.Controls.Add(this.cbpenguji2);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.cbpenguji1);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.rbhilang);
+            this.Controls.Add(this.rbrusak);
+            this.Controls.Add(this.rbbaik);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rbketerangan);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtabstrak);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.cbtahun);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbcopembimbing);
+            this.Controls.Add(this.cbpembimbing);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtnrp);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtpengarang);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtjudul);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "databukuta";
@@ -410,36 +410,36 @@
         #endregion
 
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btninsert;
+        private System.Windows.Forms.ComboBox cbpenguji3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox cbpenguji2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cbpenguji1;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rbhilang;
+        private System.Windows.Forms.RadioButton rbrusak;
+        private System.Windows.Forms.RadioButton rbbaik;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rbketerangan;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtabstrak;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbtahun;
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bukuTAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cDToolStripMenuItem;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbcopembimbing;
+        private System.Windows.Forms.ComboBox cbpembimbing;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtnrp;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtpengarang;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtjudul;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
     }
