@@ -140,6 +140,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "Formbukuta";
             this.Text = "Formbukuta";
+            this.Load += new System.EventHandler(this.Formbukuta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

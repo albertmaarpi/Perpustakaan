@@ -24,6 +24,7 @@ namespace Perpustakaan
 
         private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Formbuku fb = new Formbuku();
             if (fb.ShowDialog() == DialogResult.OK)
             {
@@ -34,6 +35,7 @@ namespace Perpustakaan
 
         private void bukuTAToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Formbukuta fb = new Formbukuta();
             if (fb.ShowDialog() == DialogResult.OK)
             {
@@ -44,6 +46,7 @@ namespace Perpustakaan
 
         private void cDToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Formcd fc = new Formcd();
             if (fc.ShowDialog() == DialogResult.OK)
             {
