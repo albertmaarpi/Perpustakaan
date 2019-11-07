@@ -70,12 +70,14 @@
             this.bukuTAToolStripMenuItem.Name = "bukuTAToolStripMenuItem";
             this.bukuTAToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.bukuTAToolStripMenuItem.Text = "Buku TA";
+            this.bukuTAToolStripMenuItem.Click += new System.EventHandler(this.bukuTAToolStripMenuItem_Click);
             // 
             // bukuToolStripMenuItem
             // 
             this.bukuToolStripMenuItem.Name = "bukuToolStripMenuItem";
             this.bukuToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.bukuToolStripMenuItem.Text = "Buku";
+            this.bukuToolStripMenuItem.Click += new System.EventHandler(this.bukuToolStripMenuItem_Click);
             // 
             // btnupdate
             // 
@@ -108,6 +110,7 @@
             this.cDToolStripMenuItem.Name = "cDToolStripMenuItem";
             this.cDToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.cDToolStripMenuItem.Text = "CD";
+            this.cDToolStripMenuItem.Click += new System.EventHandler(this.cDToolStripMenuItem_Click);
             // 
             // rbhilang
             // 

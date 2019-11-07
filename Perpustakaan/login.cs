@@ -44,6 +44,10 @@ namespace Perpustakaan
                     MessageBox.Show("halo staff "+username);
                 }
                 //MessageBox.Show("berhasil login sebagai "+username+" dengan jabatan : "+reader["jabatan"]);
+                this.Hide();
+                Formbuku fb = new Formbuku();
+                fb.ShowDialog();
+             
             }
             else
             {

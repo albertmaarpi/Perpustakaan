@@ -240,18 +240,21 @@
             this.bukuToolStripMenuItem.Name = "bukuToolStripMenuItem";
             this.bukuToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.bukuToolStripMenuItem.Text = "Buku";
+            this.bukuToolStripMenuItem.Click += new System.EventHandler(this.bukuToolStripMenuItem_Click);
             // 
             // bukuTAToolStripMenuItem
             // 
             this.bukuTAToolStripMenuItem.Name = "bukuTAToolStripMenuItem";
             this.bukuTAToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
             this.bukuTAToolStripMenuItem.Text = "Buku TA";
+            this.bukuTAToolStripMenuItem.Click += new System.EventHandler(this.bukuTAToolStripMenuItem_Click);
             // 
             // cDToolStripMenuItem
             // 
             this.cDToolStripMenuItem.Name = "cDToolStripMenuItem";
             this.cDToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.cDToolStripMenuItem.Text = "CD";
+            this.cDToolStripMenuItem.Click += new System.EventHandler(this.cDToolStripMenuItem_Click);
             // 
             // label5
             // 
@@ -422,6 +425,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Name = "databukuta";
             this.Text = "databukuta";
+            this.Load += new System.EventHandler(this.databukuta_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -18,13 +18,13 @@ namespace Perpustakaan
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
-                System.Windows.Forms.MessageBox.Show("connection success");
+               
             }
             else
             {
                 conn.Close();
                 conn.Open();
-                System.Windows.Forms.MessageBox.Show("connection success");
+               
             }
         }
 

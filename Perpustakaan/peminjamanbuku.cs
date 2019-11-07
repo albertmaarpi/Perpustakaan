@@ -21,5 +21,10 @@ namespace Perpustakaan
         {
 
         }
+
+        private void peminjamanbuku_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
