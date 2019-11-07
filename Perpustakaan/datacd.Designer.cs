@@ -31,23 +31,23 @@
             this.label24 = new System.Windows.Forms.Label();
             this.bukuTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btninsert = new System.Windows.Forms.Button();
+            this.rbketerangan = new System.Windows.Forms.RichTextBox();
             this.cDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rbhilang = new System.Windows.Forms.RadioButton();
+            this.rbrusak = new System.Windows.Forms.RadioButton();
+            this.rbbaik = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtkode = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.datetimetanggaldatang = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtharga = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtjudul = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuStrip1.SuspendLayout();
@@ -75,31 +75,31 @@
             this.bukuToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.bukuToolStripMenuItem.Text = "Buku";
             // 
-            // button2
+            // btnupdate
             // 
-            this.button2.Location = new System.Drawing.Point(260, 292);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 74;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnupdate.Location = new System.Drawing.Point(260, 292);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnupdate.TabIndex = 74;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btninsert
             // 
-            this.button1.Location = new System.Drawing.Point(49, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 73;
-            this.button1.Text = "Insert";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btninsert.Location = new System.Drawing.Point(49, 292);
+            this.btninsert.Name = "btninsert";
+            this.btninsert.Size = new System.Drawing.Size(75, 23);
+            this.btninsert.TabIndex = 73;
+            this.btninsert.Text = "Insert";
+            this.btninsert.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // rbketerangan
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(146, 154);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(211, 69);
-            this.richTextBox1.TabIndex = 72;
-            this.richTextBox1.Text = "";
+            this.rbketerangan.Location = new System.Drawing.Point(146, 154);
+            this.rbketerangan.Name = "rbketerangan";
+            this.rbketerangan.Size = new System.Drawing.Size(211, 69);
+            this.rbketerangan.TabIndex = 72;
+            this.rbketerangan.Text = "";
             // 
             // cDToolStripMenuItem
             // 
@@ -107,38 +107,38 @@
             this.cDToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.cDToolStripMenuItem.Text = "CD";
             // 
-            // radioButton5
+            // rbhilang
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton5.Location = new System.Drawing.Point(260, 256);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(55, 17);
-            this.radioButton5.TabIndex = 71;
-            this.radioButton5.Text = "Hilang";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbhilang.AutoSize = true;
+            this.rbhilang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbhilang.Location = new System.Drawing.Point(260, 256);
+            this.rbhilang.Name = "rbhilang";
+            this.rbhilang.Size = new System.Drawing.Size(55, 17);
+            this.rbhilang.TabIndex = 71;
+            this.rbhilang.Text = "Hilang";
+            this.rbhilang.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbrusak
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton3.Location = new System.Drawing.Point(198, 255);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(56, 17);
-            this.radioButton3.TabIndex = 70;
-            this.radioButton3.Text = "Rusak";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbrusak.AutoSize = true;
+            this.rbrusak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbrusak.Location = new System.Drawing.Point(198, 255);
+            this.rbrusak.Name = "rbrusak";
+            this.rbrusak.Size = new System.Drawing.Size(56, 17);
+            this.rbrusak.TabIndex = 70;
+            this.rbrusak.Text = "Rusak";
+            this.rbrusak.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbbaik
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton4.Location = new System.Drawing.Point(146, 255);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(46, 17);
-            this.radioButton4.TabIndex = 69;
-            this.radioButton4.Text = "Baik";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbbaik.AutoSize = true;
+            this.rbbaik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbbaik.Location = new System.Drawing.Point(146, 255);
+            this.rbbaik.Name = "rbbaik";
+            this.rbbaik.Size = new System.Drawing.Size(46, 17);
+            this.rbbaik.TabIndex = 69;
+            this.rbbaik.Text = "Baik";
+            this.rbbaik.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -150,12 +150,12 @@
             this.label21.TabIndex = 68;
             this.label21.Text = "Kondisi";
             // 
-            // textBox4
+            // txtkode
             // 
-            this.textBox4.Location = new System.Drawing.Point(146, 229);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(132, 20);
-            this.textBox4.TabIndex = 67;
+            this.txtkode.Location = new System.Drawing.Point(146, 229);
+            this.txtkode.Name = "txtkode";
+            this.txtkode.Size = new System.Drawing.Size(132, 20);
+            this.txtkode.TabIndex = 67;
             // 
             // label6
             // 
@@ -177,12 +177,12 @@
             this.label5.TabIndex = 65;
             this.label5.Text = "Keterangan";
             // 
-            // dateTimePicker1
+            // datetimetanggaldatang
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(146, 126);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 64;
+            this.datetimetanggaldatang.Location = new System.Drawing.Point(146, 126);
+            this.datetimetanggaldatang.Name = "datetimetanggaldatang";
+            this.datetimetanggaldatang.Size = new System.Drawing.Size(200, 20);
+            this.datetimetanggaldatang.TabIndex = 64;
             // 
             // label4
             // 
@@ -204,12 +204,12 @@
             this.label3.TabIndex = 62;
             this.label3.Text = "Rp.";
             // 
-            // textBox2
+            // txtharga
             // 
-            this.textBox2.Location = new System.Drawing.Point(178, 99);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 61;
+            this.txtharga.Location = new System.Drawing.Point(178, 99);
+            this.txtharga.Name = "txtharga";
+            this.txtharga.Size = new System.Drawing.Size(100, 20);
+            this.txtharga.TabIndex = 61;
             // 
             // label2
             // 
@@ -221,12 +221,12 @@
             this.label2.TabIndex = 60;
             this.label2.Text = "Harga";
             // 
-            // textBox1
+            // txtjudul
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 20);
-            this.textBox1.TabIndex = 59;
+            this.txtjudul.Location = new System.Drawing.Point(146, 74);
+            this.txtjudul.Name = "txtjudul";
+            this.txtjudul.Size = new System.Drawing.Size(132, 20);
+            this.txtjudul.TabIndex = 59;
             // 
             // label1
             // 
@@ -256,22 +256,22 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.btninsert);
+            this.Controls.Add(this.rbketerangan);
+            this.Controls.Add(this.rbhilang);
+            this.Controls.Add(this.rbrusak);
+            this.Controls.Add(this.rbbaik);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtkode);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.datetimetanggaldatang);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtharga);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtjudul);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "datacd";
@@ -288,23 +288,23 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.ToolStripMenuItem bukuTAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btninsert;
+        private System.Windows.Forms.RichTextBox rbketerangan;
         private System.Windows.Forms.ToolStripMenuItem cDToolStripMenuItem;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rbhilang;
+        private System.Windows.Forms.RadioButton rbrusak;
+        private System.Windows.Forms.RadioButton rbbaik;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtkode;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker datetimetanggaldatang;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtharga;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtjudul;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
     }

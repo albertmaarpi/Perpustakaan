@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
+            this.btndelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtsearch = new System.Windows.Forms.TextBox();
+            this.btnsearch = new System.Windows.Forms.Button();
+            this.btnbaru = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -42,14 +42,14 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button3
+            // btndelete
             // 
-            this.button3.Location = new System.Drawing.Point(561, 207);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 20;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btndelete.Location = new System.Drawing.Point(561, 207);
+            this.btndelete.Name = "btndelete";
+            this.btndelete.Size = new System.Drawing.Size(75, 23);
+            this.btndelete.TabIndex = 20;
+            this.btndelete.Text = "Delete";
+            this.btndelete.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
@@ -59,30 +59,30 @@
             this.dataGridView1.Size = new System.Drawing.Size(589, 103);
             this.dataGridView1.TabIndex = 19;
             // 
-            // textBox1
+            // txtsearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(478, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(170, 20);
-            this.textBox1.TabIndex = 18;
+            this.txtsearch.Location = new System.Drawing.Point(478, 55);
+            this.txtsearch.Name = "txtsearch";
+            this.txtsearch.Size = new System.Drawing.Size(170, 20);
+            this.txtsearch.TabIndex = 18;
             // 
-            // button2
+            // btnsearch
             // 
-            this.button2.Location = new System.Drawing.Point(375, 53);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Search";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnsearch.Location = new System.Drawing.Point(375, 53);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.TabIndex = 17;
+            this.btnsearch.Text = "Search";
+            this.btnsearch.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnbaru
             // 
-            this.button1.Location = new System.Drawing.Point(277, 53);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "CD baru";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnbaru.Location = new System.Drawing.Point(277, 53);
+            this.btnbaru.Name = "btnbaru";
+            this.btnbaru.Size = new System.Drawing.Size(75, 23);
+            this.btnbaru.TabIndex = 16;
+            this.btnbaru.Text = "CD baru";
+            this.btnbaru.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -129,11 +129,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btndelete);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtsearch);
+            this.Controls.Add(this.btnsearch);
+            this.Controls.Add(this.btnbaru);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Formcd";
@@ -148,11 +148,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtsearch;
+        private System.Windows.Forms.Button btnsearch;
+        private System.Windows.Forms.Button btnbaru;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;

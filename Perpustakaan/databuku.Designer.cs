@@ -30,60 +30,60 @@
         {
             this.bukuTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label24 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.btnupdate = new System.Windows.Forms.Button();
+            this.btninsert = new System.Windows.Forms.Button();
+            this.txtbarcode = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rbketerangan = new System.Windows.Forms.RichTextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.datetimetanggaldatang = new System.Windows.Forms.DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.txtisbn = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtvol = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rbhilang = new System.Windows.Forms.RadioButton();
+            this.rbrusak = new System.Windows.Forms.RadioButton();
+            this.rbbaik = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbcopy = new System.Windows.Forms.RadioButton();
+            this.rbasli = new System.Windows.Forms.RadioButton();
             this.label20 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txttinggi = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txtarab = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txtromawi = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtbahasa = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtharga = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtedisi = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txttahunterbit = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtkotaterbit = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtpenerbit = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtpengarang = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbsubjek = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtddc = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtnomorpanggil = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtsub = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtjudul = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.txtkode = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -104,31 +104,31 @@
             this.label24.TabIndex = 108;
             this.label24.Text = "Buku";
             // 
-            // button2
+            // btnupdate
             // 
-            this.button2.Location = new System.Drawing.Point(525, 451);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 107;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnupdate.Location = new System.Drawing.Point(525, 451);
+            this.btnupdate.Name = "btnupdate";
+            this.btnupdate.Size = new System.Drawing.Size(75, 23);
+            this.btnupdate.TabIndex = 107;
+            this.btnupdate.Text = "Update";
+            this.btnupdate.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btninsert
             // 
-            this.button1.Location = new System.Drawing.Point(421, 451);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 106;
-            this.button1.Text = "Insert";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btninsert.Location = new System.Drawing.Point(421, 451);
+            this.btninsert.Name = "btninsert";
+            this.btninsert.Size = new System.Drawing.Size(75, 23);
+            this.btninsert.TabIndex = 106;
+            this.btninsert.Text = "Insert";
+            this.btninsert.UseVisualStyleBackColor = true;
             // 
-            // textBox12
+            // txtbarcode
             // 
-            this.textBox12.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox12.Location = new System.Drawing.Point(438, 74);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(144, 21);
-            this.textBox12.TabIndex = 105;
+            this.txtbarcode.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtbarcode.Location = new System.Drawing.Point(438, 74);
+            this.txtbarcode.Name = "txtbarcode";
+            this.txtbarcode.Size = new System.Drawing.Size(144, 21);
+            this.txtbarcode.TabIndex = 105;
             // 
             // label13
             // 
@@ -140,13 +140,13 @@
             this.label13.TabIndex = 104;
             this.label13.Text = "Barcode";
             // 
-            // richTextBox1
+            // rbketerangan
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(407, 322);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(200, 123);
-            this.richTextBox1.TabIndex = 103;
-            this.richTextBox1.Text = "";
+            this.rbketerangan.Location = new System.Drawing.Point(407, 322);
+            this.rbketerangan.Name = "rbketerangan";
+            this.rbketerangan.Size = new System.Drawing.Size(200, 123);
+            this.rbketerangan.TabIndex = 103;
+            this.rbketerangan.Text = "";
             // 
             // label23
             // 
@@ -158,12 +158,12 @@
             this.label23.TabIndex = 102;
             this.label23.Text = "Keterangan";
             // 
-            // dateTimePicker1
+            // datetimetanggaldatang
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(421, 292);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 101;
+            this.datetimetanggaldatang.Location = new System.Drawing.Point(421, 292);
+            this.datetimetanggaldatang.Name = "datetimetanggaldatang";
+            this.datetimetanggaldatang.Size = new System.Drawing.Size(200, 20);
+            this.datetimetanggaldatang.TabIndex = 101;
             // 
             // label22
             // 
@@ -175,13 +175,13 @@
             this.label22.TabIndex = 100;
             this.label22.Text = "Tanggal datang";
             // 
-            // textBox11
+            // txtisbn
             // 
-            this.textBox11.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox11.Location = new System.Drawing.Point(146, 399);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(144, 21);
-            this.textBox11.TabIndex = 99;
+            this.txtisbn.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtisbn.Location = new System.Drawing.Point(146, 399);
+            this.txtisbn.Name = "txtisbn";
+            this.txtisbn.Size = new System.Drawing.Size(144, 21);
+            this.txtisbn.TabIndex = 99;
             // 
             // label12
             // 
@@ -193,13 +193,13 @@
             this.label12.TabIndex = 98;
             this.label12.Text = "ISBN";
             // 
-            // textBox10
+            // txtvol
             // 
-            this.textBox10.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox10.Location = new System.Drawing.Point(146, 372);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(144, 21);
-            this.textBox10.TabIndex = 97;
+            this.txtvol.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtvol.Location = new System.Drawing.Point(146, 372);
+            this.txtvol.Name = "txtvol";
+            this.txtvol.Size = new System.Drawing.Size(144, 21);
+            this.txtvol.TabIndex = 97;
             // 
             // label11
             // 
@@ -211,38 +211,38 @@
             this.label11.TabIndex = 96;
             this.label11.Text = "Volume";
             // 
-            // radioButton5
+            // rbhilang
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton5.Location = new System.Drawing.Point(559, 263);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(55, 17);
-            this.radioButton5.TabIndex = 95;
-            this.radioButton5.Text = "Hilang";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rbhilang.AutoSize = true;
+            this.rbhilang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbhilang.Location = new System.Drawing.Point(559, 263);
+            this.rbhilang.Name = "rbhilang";
+            this.rbhilang.Size = new System.Drawing.Size(55, 17);
+            this.rbhilang.TabIndex = 95;
+            this.rbhilang.Text = "Hilang";
+            this.rbhilang.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rbrusak
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton3.Location = new System.Drawing.Point(497, 264);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(56, 17);
-            this.radioButton3.TabIndex = 94;
-            this.radioButton3.Text = "Rusak";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbrusak.AutoSize = true;
+            this.rbrusak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbrusak.Location = new System.Drawing.Point(497, 264);
+            this.rbrusak.Name = "rbrusak";
+            this.rbrusak.Size = new System.Drawing.Size(56, 17);
+            this.rbrusak.TabIndex = 94;
+            this.rbrusak.Text = "Rusak";
+            this.rbrusak.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rbbaik
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton4.Location = new System.Drawing.Point(421, 264);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(46, 17);
-            this.radioButton4.TabIndex = 93;
-            this.radioButton4.Text = "Baik";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rbbaik.AutoSize = true;
+            this.rbbaik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbbaik.Location = new System.Drawing.Point(421, 264);
+            this.rbbaik.Name = "rbbaik";
+            this.rbbaik.Size = new System.Drawing.Size(46, 17);
+            this.rbbaik.TabIndex = 93;
+            this.rbbaik.Text = "Baik";
+            this.rbbaik.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -254,27 +254,27 @@
             this.label21.TabIndex = 92;
             this.label21.Text = "Kondisi";
             // 
-            // radioButton2
+            // rbcopy
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton2.Location = new System.Drawing.Point(497, 241);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(76, 17);
-            this.radioButton2.TabIndex = 91;
-            this.radioButton2.Text = "Buku copy";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbcopy.AutoSize = true;
+            this.rbcopy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbcopy.Location = new System.Drawing.Point(497, 241);
+            this.rbcopy.Name = "rbcopy";
+            this.rbcopy.Size = new System.Drawing.Size(76, 17);
+            this.rbcopy.TabIndex = 91;
+            this.rbcopy.Text = "Buku copy";
+            this.rbcopy.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rbasli
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.radioButton1.Location = new System.Drawing.Point(421, 241);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(68, 17);
-            this.radioButton1.TabIndex = 90;
-            this.radioButton1.Text = "Buku asli";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbasli.AutoSize = true;
+            this.rbasli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.rbasli.Location = new System.Drawing.Point(421, 241);
+            this.rbasli.Name = "rbasli";
+            this.rbasli.Size = new System.Drawing.Size(68, 17);
+            this.rbasli.TabIndex = 90;
+            this.rbasli.Text = "Buku asli";
+            this.rbasli.UseVisualStyleBackColor = true;
             // 
             // label20
             // 
@@ -286,13 +286,13 @@
             this.label20.TabIndex = 89;
             this.label20.Text = "Status";
             // 
-            // textBox17
+            // txttinggi
             // 
-            this.textBox17.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox17.Location = new System.Drawing.Point(438, 209);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(144, 21);
-            this.textBox17.TabIndex = 88;
+            this.txttinggi.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txttinggi.Location = new System.Drawing.Point(438, 209);
+            this.txttinggi.Name = "txttinggi";
+            this.txttinggi.Size = new System.Drawing.Size(144, 21);
+            this.txttinggi.TabIndex = 88;
             // 
             // label19
             // 
@@ -316,13 +316,13 @@
             this.cDToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.cDToolStripMenuItem.Text = "CD";
             // 
-            // textBox16
+            // txtarab
             // 
-            this.textBox16.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox16.Location = new System.Drawing.Point(438, 182);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(144, 21);
-            this.textBox16.TabIndex = 86;
+            this.txtarab.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtarab.Location = new System.Drawing.Point(438, 182);
+            this.txtarab.Name = "txtarab";
+            this.txtarab.Size = new System.Drawing.Size(144, 21);
+            this.txtarab.TabIndex = 86;
             // 
             // label18
             // 
@@ -334,13 +334,13 @@
             this.label18.TabIndex = 85;
             this.label18.Text = "Halaman arab";
             // 
-            // textBox15
+            // txtromawi
             // 
-            this.textBox15.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox15.Location = new System.Drawing.Point(438, 155);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(144, 21);
-            this.textBox15.TabIndex = 84;
+            this.txtromawi.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtromawi.Location = new System.Drawing.Point(438, 155);
+            this.txtromawi.Name = "txtromawi";
+            this.txtromawi.Size = new System.Drawing.Size(144, 21);
+            this.txtromawi.TabIndex = 84;
             // 
             // label17
             // 
@@ -352,13 +352,13 @@
             this.label17.TabIndex = 83;
             this.label17.Text = "Halaman romawi";
             // 
-            // textBox14
+            // txtbahasa
             // 
-            this.textBox14.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox14.Location = new System.Drawing.Point(438, 128);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(144, 21);
-            this.textBox14.TabIndex = 82;
+            this.txtbahasa.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtbahasa.Location = new System.Drawing.Point(438, 128);
+            this.txtbahasa.Name = "txtbahasa";
+            this.txtbahasa.Size = new System.Drawing.Size(144, 21);
+            this.txtbahasa.TabIndex = 82;
             // 
             // label16
             // 
@@ -380,13 +380,13 @@
             this.label15.TabIndex = 80;
             this.label15.Text = "Rp.";
             // 
-            // textBox13
+            // txtharga
             // 
-            this.textBox13.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox13.Location = new System.Drawing.Point(470, 101);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(112, 21);
-            this.textBox13.TabIndex = 79;
+            this.txtharga.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtharga.Location = new System.Drawing.Point(470, 101);
+            this.txtharga.Name = "txtharga";
+            this.txtharga.Size = new System.Drawing.Size(112, 21);
+            this.txtharga.TabIndex = 79;
             // 
             // label14
             // 
@@ -398,13 +398,13 @@
             this.label14.TabIndex = 78;
             this.label14.Text = "Harga";
             // 
-            // textBox9
+            // txtedisi
             // 
-            this.textBox9.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox9.Location = new System.Drawing.Point(146, 345);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(144, 21);
-            this.textBox9.TabIndex = 77;
+            this.txtedisi.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtedisi.Location = new System.Drawing.Point(146, 345);
+            this.txtedisi.Name = "txtedisi";
+            this.txtedisi.Size = new System.Drawing.Size(144, 21);
+            this.txtedisi.TabIndex = 77;
             // 
             // label10
             // 
@@ -416,13 +416,13 @@
             this.label10.TabIndex = 76;
             this.label10.Text = "Edisi";
             // 
-            // textBox8
+            // txttahunterbit
             // 
-            this.textBox8.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox8.Location = new System.Drawing.Point(146, 318);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(144, 21);
-            this.textBox8.TabIndex = 75;
+            this.txttahunterbit.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txttahunterbit.Location = new System.Drawing.Point(146, 318);
+            this.txttahunterbit.Name = "txttahunterbit";
+            this.txttahunterbit.Size = new System.Drawing.Size(144, 21);
+            this.txttahunterbit.TabIndex = 75;
             // 
             // label9
             // 
@@ -434,13 +434,13 @@
             this.label9.TabIndex = 74;
             this.label9.Text = "Tahun terbit";
             // 
-            // textBox7
+            // txtkotaterbit
             // 
-            this.textBox7.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox7.Location = new System.Drawing.Point(146, 291);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(144, 21);
-            this.textBox7.TabIndex = 73;
+            this.txtkotaterbit.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtkotaterbit.Location = new System.Drawing.Point(146, 291);
+            this.txtkotaterbit.Name = "txtkotaterbit";
+            this.txtkotaterbit.Size = new System.Drawing.Size(144, 21);
+            this.txtkotaterbit.TabIndex = 73;
             // 
             // label8
             // 
@@ -452,13 +452,13 @@
             this.label8.TabIndex = 72;
             this.label8.Text = "Kota terbit";
             // 
-            // textBox6
+            // txtpenerbit
             // 
-            this.textBox6.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox6.Location = new System.Drawing.Point(146, 264);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(144, 21);
-            this.textBox6.TabIndex = 71;
+            this.txtpenerbit.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtpenerbit.Location = new System.Drawing.Point(146, 264);
+            this.txtpenerbit.Name = "txtpenerbit";
+            this.txtpenerbit.Size = new System.Drawing.Size(144, 21);
+            this.txtpenerbit.TabIndex = 71;
             // 
             // label7
             // 
@@ -470,13 +470,13 @@
             this.label7.TabIndex = 70;
             this.label7.Text = "Penerbit";
             // 
-            // textBox5
+            // txtpengarang
             // 
-            this.textBox5.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox5.Location = new System.Drawing.Point(146, 237);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(144, 21);
-            this.textBox5.TabIndex = 69;
+            this.txtpengarang.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtpengarang.Location = new System.Drawing.Point(146, 237);
+            this.txtpengarang.Name = "txtpengarang";
+            this.txtpengarang.Size = new System.Drawing.Size(144, 21);
+            this.txtpengarang.TabIndex = 69;
             // 
             // label6
             // 
@@ -488,13 +488,13 @@
             this.label6.TabIndex = 68;
             this.label6.Text = "Pengarang";
             // 
-            // comboBox1
+            // cbsubjek
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(146, 210);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(144, 21);
-            this.comboBox1.TabIndex = 67;
+            this.cbsubjek.FormattingEnabled = true;
+            this.cbsubjek.Location = new System.Drawing.Point(146, 210);
+            this.cbsubjek.Name = "cbsubjek";
+            this.cbsubjek.Size = new System.Drawing.Size(144, 21);
+            this.cbsubjek.TabIndex = 67;
             // 
             // label5
             // 
@@ -506,13 +506,13 @@
             this.label5.TabIndex = 66;
             this.label5.Text = "Subjek";
             // 
-            // textBox4
+            // txtddc
             // 
-            this.textBox4.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox4.Location = new System.Drawing.Point(146, 182);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(144, 21);
-            this.textBox4.TabIndex = 65;
+            this.txtddc.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtddc.Location = new System.Drawing.Point(146, 182);
+            this.txtddc.Name = "txtddc";
+            this.txtddc.Size = new System.Drawing.Size(144, 21);
+            this.txtddc.TabIndex = 65;
             // 
             // label4
             // 
@@ -524,13 +524,13 @@
             this.label4.TabIndex = 64;
             this.label4.Text = "Nama DDC";
             // 
-            // textBox3
+            // txtnomorpanggil
             // 
-            this.textBox3.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox3.Location = new System.Drawing.Point(146, 156);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(144, 21);
-            this.textBox3.TabIndex = 63;
+            this.txtnomorpanggil.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtnomorpanggil.Location = new System.Drawing.Point(146, 156);
+            this.txtnomorpanggil.Name = "txtnomorpanggil";
+            this.txtnomorpanggil.Size = new System.Drawing.Size(144, 21);
+            this.txtnomorpanggil.TabIndex = 63;
             // 
             // label3
             // 
@@ -542,13 +542,13 @@
             this.label3.TabIndex = 62;
             this.label3.Text = "Nomor panggil";
             // 
-            // textBox2
+            // txtsub
             // 
-            this.textBox2.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox2.Location = new System.Drawing.Point(146, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(144, 21);
-            this.textBox2.TabIndex = 61;
+            this.txtsub.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtsub.Location = new System.Drawing.Point(146, 102);
+            this.txtsub.Name = "txtsub";
+            this.txtsub.Size = new System.Drawing.Size(144, 21);
+            this.txtsub.TabIndex = 61;
             // 
             // label2
             // 
@@ -560,13 +560,13 @@
             this.label2.TabIndex = 60;
             this.label2.Text = "Sub judul";
             // 
-            // textBox1
+            // txtjudul
             // 
-            this.textBox1.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox1.Location = new System.Drawing.Point(146, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(144, 21);
-            this.textBox1.TabIndex = 59;
+            this.txtjudul.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtjudul.Location = new System.Drawing.Point(146, 75);
+            this.txtjudul.Name = "txtjudul";
+            this.txtjudul.Size = new System.Drawing.Size(144, 21);
+            this.txtjudul.TabIndex = 59;
             // 
             // label1
             // 
@@ -590,13 +590,13 @@
             this.menuStrip1.TabIndex = 109;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // textBox18
+            // txtkode
             // 
-            this.textBox18.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.textBox18.Location = new System.Drawing.Point(146, 129);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(144, 21);
-            this.textBox18.TabIndex = 111;
+            this.txtkode.Font = new System.Drawing.Font("Tahoma", 8.25F);
+            this.txtkode.Location = new System.Drawing.Point(146, 129);
+            this.txtkode.Name = "txtkode";
+            this.txtkode.Size = new System.Drawing.Size(144, 21);
+            this.txtkode.TabIndex = 111;
             // 
             // label25
             // 
@@ -613,58 +613,58 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 480);
-            this.Controls.Add(this.textBox18);
+            this.Controls.Add(this.txtkode);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.btnupdate);
+            this.Controls.Add(this.btninsert);
+            this.Controls.Add(this.txtbarcode);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rbketerangan);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.datetimetanggaldatang);
             this.Controls.Add(this.label22);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txtisbn);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtvol);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.rbhilang);
+            this.Controls.Add(this.rbrusak);
+            this.Controls.Add(this.rbbaik);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rbcopy);
+            this.Controls.Add(this.rbasli);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.txttinggi);
             this.Controls.Add(this.label19);
-            this.Controls.Add(this.textBox16);
+            this.Controls.Add(this.txtarab);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox15);
+            this.Controls.Add(this.txtromawi);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.textBox14);
+            this.Controls.Add(this.txtbahasa);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtharga);
             this.Controls.Add(this.label14);
-            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.txtedisi);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.txttahunterbit);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtkotaterbit);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtpenerbit);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtpengarang);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbsubjek);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtddc);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtnomorpanggil);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtsub);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtjudul);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.Name = "databuku";
@@ -680,60 +680,60 @@
 
         private System.Windows.Forms.ToolStripMenuItem bukuTAToolStripMenuItem;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Button btnupdate;
+        private System.Windows.Forms.Button btninsert;
+        private System.Windows.Forms.TextBox txtbarcode;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rbketerangan;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker datetimetanggaldatang;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtisbn;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtvol;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rbhilang;
+        private System.Windows.Forms.RadioButton rbrusak;
+        private System.Windows.Forms.RadioButton rbbaik;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rbcopy;
+        private System.Windows.Forms.RadioButton rbasli;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txttinggi;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cDToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txtarab;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txtromawi;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtbahasa;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtharga;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtedisi;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txttahunterbit;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtkotaterbit;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtpenerbit;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtpengarang;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbsubjek;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtddc;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtnomorpanggil;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtsub;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtjudul;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TextBox txtkode;
         private System.Windows.Forms.Label label25;
     }
 }
