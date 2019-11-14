@@ -176,6 +176,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Properties\DataSources\connection.datasource" />
+    <None Include="Properties\DataSources\databuku.datasource" />
+    <None Include="Properties\DataSources\databukuta.datasource" />
+    <None Include="Properties\DataSources\datacd.datasource" />
+    <None Include="Properties\DataSources\Formbuku.datasource" />
+    <None Include="Properties\DataSources\Formbukuta.datasource" />
+    <None Include="Properties\DataSources\Formcd.datasource" />
+    <None Include="Properties\DataSources\login.datasource" />
+    <None Include="Properties\DataSources\peminjamanbuku.datasource" />
+    <None Include="Properties\DataSources\peminjamanCD.datasource" />
+    <None Include="Properties\DataSources\peminjamanTA.datasource" />
+    <None Include="Properties\DataSources\pencarianbuku.datasource" />
+    <None Include="Properties\DataSources\pencarianCD.datasource" />
+    <None Include="Properties\DataSources\pencarianTA.datasource" />
+    <None Include="Properties\DataSources\Perpustakaan.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Perpustakaan.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

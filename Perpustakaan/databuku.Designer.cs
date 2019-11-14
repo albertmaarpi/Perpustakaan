@@ -32,22 +32,13 @@
             this.label24 = new System.Windows.Forms.Label();
             this.btnupdate = new System.Windows.Forms.Button();
             this.btninsert = new System.Windows.Forms.Button();
-            this.txtbarcode = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.rbketerangan = new System.Windows.Forms.RichTextBox();
+            this.txtketerangan = new System.Windows.Forms.RichTextBox();
             this.label23 = new System.Windows.Forms.Label();
-            this.datetimetanggaldatang = new System.Windows.Forms.DateTimePicker();
-            this.label22 = new System.Windows.Forms.Label();
             this.txtisbn = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtvol = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.rbhilang = new System.Windows.Forms.RadioButton();
-            this.rbrusak = new System.Windows.Forms.RadioButton();
-            this.rbbaik = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
-            this.rbcopy = new System.Windows.Forms.RadioButton();
-            this.rbasli = new System.Windows.Forms.RadioButton();
             this.label20 = new System.Windows.Forms.Label();
             this.txttinggi = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -86,8 +77,9 @@
             this.txtkode = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.rbya = new System.Windows.Forms.RadioButton();
-            this.rbtidak = new System.Windows.Forms.RadioButton();
+            this.cbasli = new System.Windows.Forms.ComboBox();
+            this.cbkondisi = new System.Windows.Forms.ComboBox();
+            this.cbavail = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,59 +117,25 @@
             this.btninsert.TabIndex = 106;
             this.btninsert.Text = "Insert";
             this.btninsert.UseVisualStyleBackColor = true;
+            this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
             // 
-            // txtbarcode
+            // txtketerangan
             // 
-            this.txtbarcode.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txtbarcode.Location = new System.Drawing.Point(438, 74);
-            this.txtbarcode.Name = "txtbarcode";
-            this.txtbarcode.Size = new System.Drawing.Size(144, 21);
-            this.txtbarcode.TabIndex = 105;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(352, 74);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(60, 16);
-            this.label13.TabIndex = 104;
-            this.label13.Text = "Barcode";
-            // 
-            // rbketerangan
-            // 
-            this.rbketerangan.Location = new System.Drawing.Point(407, 322);
-            this.rbketerangan.Name = "rbketerangan";
-            this.rbketerangan.Size = new System.Drawing.Size(200, 123);
-            this.rbketerangan.TabIndex = 103;
-            this.rbketerangan.Text = "";
+            this.txtketerangan.Location = new System.Drawing.Point(430, 265);
+            this.txtketerangan.Name = "txtketerangan";
+            this.txtketerangan.Size = new System.Drawing.Size(200, 123);
+            this.txtketerangan.TabIndex = 103;
+            this.txtketerangan.Text = "";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(300, 323);
+            this.label23.Location = new System.Drawing.Point(319, 266);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(77, 16);
             this.label23.TabIndex = 102;
             this.label23.Text = "Keterangan";
-            // 
-            // datetimetanggaldatang
-            // 
-            this.datetimetanggaldatang.Location = new System.Drawing.Point(421, 292);
-            this.datetimetanggaldatang.Name = "datetimetanggaldatang";
-            this.datetimetanggaldatang.Size = new System.Drawing.Size(200, 20);
-            this.datetimetanggaldatang.TabIndex = 101;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(287, 292);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(104, 16);
-            this.label22.TabIndex = 100;
-            this.label22.Text = "Tanggal datang";
             // 
             // txtisbn
             // 
@@ -215,85 +173,30 @@
             this.label11.TabIndex = 96;
             this.label11.Text = "Volume";
             // 
-            // rbhilang
-            // 
-            this.rbhilang.AutoSize = true;
-            this.rbhilang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rbhilang.Location = new System.Drawing.Point(559, 263);
-            this.rbhilang.Name = "rbhilang";
-            this.rbhilang.Size = new System.Drawing.Size(55, 17);
-            this.rbhilang.TabIndex = 95;
-            this.rbhilang.Text = "Hilang";
-            this.rbhilang.UseVisualStyleBackColor = true;
-            // 
-            // rbrusak
-            // 
-            this.rbrusak.AutoSize = true;
-            this.rbrusak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rbrusak.Location = new System.Drawing.Point(497, 264);
-            this.rbrusak.Name = "rbrusak";
-            this.rbrusak.Size = new System.Drawing.Size(56, 17);
-            this.rbrusak.TabIndex = 94;
-            this.rbrusak.Text = "Rusak";
-            this.rbrusak.UseVisualStyleBackColor = true;
-            // 
-            // rbbaik
-            // 
-            this.rbbaik.AutoSize = true;
-            this.rbbaik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rbbaik.Location = new System.Drawing.Point(421, 264);
-            this.rbbaik.Name = "rbbaik";
-            this.rbbaik.Size = new System.Drawing.Size(46, 17);
-            this.rbbaik.TabIndex = 93;
-            this.rbbaik.Text = "Baik";
-            this.rbbaik.UseVisualStyleBackColor = true;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(339, 265);
+            this.label21.Location = new System.Drawing.Point(344, 233);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(52, 16);
             this.label21.TabIndex = 92;
             this.label21.Text = "Kondisi";
             // 
-            // rbcopy
-            // 
-            this.rbcopy.AutoSize = true;
-            this.rbcopy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rbcopy.Location = new System.Drawing.Point(497, 241);
-            this.rbcopy.Name = "rbcopy";
-            this.rbcopy.Size = new System.Drawing.Size(76, 17);
-            this.rbcopy.TabIndex = 91;
-            this.rbcopy.Text = "Buku copy";
-            this.rbcopy.UseVisualStyleBackColor = true;
-            // 
-            // rbasli
-            // 
-            this.rbasli.AutoSize = true;
-            this.rbasli.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rbasli.Location = new System.Drawing.Point(421, 241);
-            this.rbasli.Name = "rbasli";
-            this.rbasli.Size = new System.Drawing.Size(68, 17);
-            this.rbasli.TabIndex = 90;
-            this.rbasli.Text = "Buku asli";
-            this.rbasli.UseVisualStyleBackColor = true;
-            // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(346, 242);
+            this.label20.Location = new System.Drawing.Point(336, 210);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(45, 16);
+            this.label20.Size = new System.Drawing.Size(60, 16);
             this.label20.TabIndex = 89;
-            this.label20.Text = "Status";
+            this.label20.Text = "Keaslian";
             // 
             // txttinggi
             // 
             this.txttinggi.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txttinggi.Location = new System.Drawing.Point(438, 209);
+            this.txttinggi.Location = new System.Drawing.Point(430, 177);
             this.txttinggi.Name = "txttinggi";
             this.txttinggi.Size = new System.Drawing.Size(144, 21);
             this.txttinggi.TabIndex = 88;
@@ -302,7 +205,7 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(362, 210);
+            this.label19.Location = new System.Drawing.Point(354, 178);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(46, 16);
             this.label19.TabIndex = 87;
@@ -325,7 +228,7 @@
             // txtarab
             // 
             this.txtarab.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txtarab.Location = new System.Drawing.Point(438, 182);
+            this.txtarab.Location = new System.Drawing.Point(430, 150);
             this.txtarab.Name = "txtarab";
             this.txtarab.Size = new System.Drawing.Size(144, 21);
             this.txtarab.TabIndex = 86;
@@ -334,7 +237,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(314, 182);
+            this.label18.Location = new System.Drawing.Point(306, 150);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(94, 16);
             this.label18.TabIndex = 85;
@@ -343,7 +246,7 @@
             // txtromawi
             // 
             this.txtromawi.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txtromawi.Location = new System.Drawing.Point(438, 155);
+            this.txtromawi.Location = new System.Drawing.Point(430, 123);
             this.txtromawi.Name = "txtromawi";
             this.txtromawi.Size = new System.Drawing.Size(144, 21);
             this.txtromawi.TabIndex = 84;
@@ -352,7 +255,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(323, 160);
+            this.label17.Location = new System.Drawing.Point(315, 128);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(109, 16);
             this.label17.TabIndex = 83;
@@ -361,7 +264,7 @@
             // txtbahasa
             // 
             this.txtbahasa.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txtbahasa.Location = new System.Drawing.Point(438, 128);
+            this.txtbahasa.Location = new System.Drawing.Point(430, 96);
             this.txtbahasa.Name = "txtbahasa";
             this.txtbahasa.Size = new System.Drawing.Size(144, 21);
             this.txtbahasa.TabIndex = 82;
@@ -370,7 +273,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(353, 129);
+            this.label16.Location = new System.Drawing.Point(345, 97);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(55, 16);
             this.label16.TabIndex = 81;
@@ -380,7 +283,7 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(435, 105);
+            this.label15.Location = new System.Drawing.Point(427, 73);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(29, 16);
             this.label15.TabIndex = 80;
@@ -389,7 +292,7 @@
             // txtharga
             // 
             this.txtharga.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txtharga.Location = new System.Drawing.Point(470, 101);
+            this.txtharga.Location = new System.Drawing.Point(462, 69);
             this.txtharga.Name = "txtharga";
             this.txtharga.Size = new System.Drawing.Size(112, 21);
             this.txtharga.TabIndex = 79;
@@ -398,7 +301,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(362, 106);
+            this.label14.Location = new System.Drawing.Point(354, 74);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(46, 16);
             this.label14.TabIndex = 78;
@@ -497,6 +400,9 @@
             // cbsubjek
             // 
             this.cbsubjek.FormattingEnabled = true;
+            this.cbsubjek.Items.AddRange(new object[] {
+            "haha",
+            "hehe"});
             this.cbsubjek.Location = new System.Drawing.Point(146, 210);
             this.cbsubjek.Name = "cbsubjek";
             this.cbsubjek.Size = new System.Drawing.Size(144, 21);
@@ -624,57 +530,61 @@
             this.label26.TabIndex = 112;
             this.label26.Text = "Available";
             // 
-            // rbya
+            // cbasli
             // 
-            this.rbya.AutoSize = true;
-            this.rbya.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rbya.Location = new System.Drawing.Point(146, 425);
-            this.rbya.Name = "rbya";
-            this.rbya.Size = new System.Drawing.Size(36, 17);
-            this.rbya.TabIndex = 113;
-            this.rbya.Text = "ya";
-            this.rbya.UseVisualStyleBackColor = true;
+            this.cbasli.FormattingEnabled = true;
+            this.cbasli.Items.AddRange(new object[] {
+            "Buku asli",
+            "Buku copy"});
+            this.cbasli.Location = new System.Drawing.Point(430, 204);
+            this.cbasli.Name = "cbasli";
+            this.cbasli.Size = new System.Drawing.Size(144, 21);
+            this.cbasli.TabIndex = 115;
             // 
-            // rbtidak
+            // cbkondisi
             // 
-            this.rbtidak.AutoSize = true;
-            this.rbtidak.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.rbtidak.Location = new System.Drawing.Point(201, 426);
-            this.rbtidak.Name = "rbtidak";
-            this.rbtidak.Size = new System.Drawing.Size(48, 17);
-            this.rbtidak.TabIndex = 114;
-            this.rbtidak.Text = "tidak";
-            this.rbtidak.UseVisualStyleBackColor = true;
+            this.cbkondisi.FormattingEnabled = true;
+            this.cbkondisi.Items.AddRange(new object[] {
+            "Baik",
+            "Rusak",
+            "Hilang"});
+            this.cbkondisi.Location = new System.Drawing.Point(430, 233);
+            this.cbkondisi.Name = "cbkondisi";
+            this.cbkondisi.Size = new System.Drawing.Size(144, 21);
+            this.cbkondisi.TabIndex = 116;
+            // 
+            // cbavail
+            // 
+            this.cbavail.FormattingEnabled = true;
+            this.cbavail.Items.AddRange(new object[] {
+            "ya",
+            "tidak"});
+            this.cbavail.Location = new System.Drawing.Point(146, 425);
+            this.cbavail.Name = "cbavail";
+            this.cbavail.Size = new System.Drawing.Size(144, 21);
+            this.cbavail.TabIndex = 117;
             // 
             // databuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 480);
-            this.Controls.Add(this.rbtidak);
-            this.Controls.Add(this.rbya);
+            this.Controls.Add(this.cbavail);
+            this.Controls.Add(this.cbkondisi);
+            this.Controls.Add(this.cbasli);
             this.Controls.Add(this.label26);
             this.Controls.Add(this.txtkode);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btninsert);
-            this.Controls.Add(this.txtbarcode);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.rbketerangan);
+            this.Controls.Add(this.txtketerangan);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.datetimetanggaldatang);
-            this.Controls.Add(this.label22);
             this.Controls.Add(this.txtisbn);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtvol);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.rbhilang);
-            this.Controls.Add(this.rbrusak);
-            this.Controls.Add(this.rbbaik);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.rbcopy);
-            this.Controls.Add(this.rbasli);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.txttinggi);
             this.Controls.Add(this.label19);
@@ -724,22 +634,13 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Button btnupdate;
         private System.Windows.Forms.Button btninsert;
-        private System.Windows.Forms.TextBox txtbarcode;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RichTextBox rbketerangan;
+        private System.Windows.Forms.RichTextBox txtketerangan;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.DateTimePicker datetimetanggaldatang;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txtisbn;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txtvol;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton rbhilang;
-        private System.Windows.Forms.RadioButton rbrusak;
-        private System.Windows.Forms.RadioButton rbbaik;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.RadioButton rbcopy;
-        private System.Windows.Forms.RadioButton rbasli;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txttinggi;
         private System.Windows.Forms.Label label19;
@@ -778,7 +679,8 @@
         private System.Windows.Forms.TextBox txtkode;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.RadioButton rbya;
-        private System.Windows.Forms.RadioButton rbtidak;
+        private System.Windows.Forms.ComboBox cbasli;
+        private System.Windows.Forms.ComboBox cbkondisi;
+        private System.Windows.Forms.ComboBox cbavail;
     }
 }

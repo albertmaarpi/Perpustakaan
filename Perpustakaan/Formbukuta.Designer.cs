@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btndelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DELETE = new System.Windows.Forms.DataGridViewButtonColumn();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.btnsearch = new System.Windows.Forms.Button();
             this.btnbaru = new System.Windows.Forms.Button();
@@ -42,22 +42,25 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btndelete
-            // 
-            this.btndelete.Location = new System.Drawing.Point(559, 201);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(75, 23);
-            this.btndelete.TabIndex = 27;
-            this.btndelete.Text = "Delete";
-            this.btndelete.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DELETE});
             this.dataGridView1.Location = new System.Drawing.Point(45, 92);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(589, 103);
             this.dataGridView1.TabIndex = 26;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
+            // 
+            // DELETE
+            // 
+            this.DELETE.HeaderText = "DELETE";
+            this.DELETE.Name = "DELETE";
+            this.DELETE.Text = "DELETE";
+            this.DELETE.UseColumnTextForButtonValue = true;
             // 
             // txtsearch
             // 
@@ -74,6 +77,7 @@
             this.btnsearch.TabIndex = 24;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // btnbaru
             // 
@@ -83,6 +87,7 @@
             this.btnbaru.TabIndex = 23;
             this.btnbaru.Text = "Buku TA baru";
             this.btnbaru.UseVisualStyleBackColor = true;
+            this.btnbaru.Click += new System.EventHandler(this.btnbaru_Click);
             // 
             // label1
             // 
@@ -131,7 +136,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btndelete);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.btnsearch);
@@ -150,8 +154,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Button btnsearch;
@@ -161,5 +163,6 @@
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bukuTAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cDToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewButtonColumn DELETE;
     }
 }
