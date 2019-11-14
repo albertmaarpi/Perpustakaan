@@ -15,7 +15,7 @@ namespace Perpustakaan
     {
         public MySqlDataAdapter da;
         connection conn;
-        public DataSet ds;
+         DataSet ds;
 
         public pencarianbuku()
         {
@@ -29,17 +29,15 @@ namespace Perpustakaan
 
         private void pencarianbuku_Load(object sender, EventArgs e)
         {
-            ds = new DataSet();
-            conn = new connection();
+    
 
         }
 
         private void btnsearch_Click(object sender, EventArgs e)
         {
-            da = new MySqlDataAdapter("select * from buku", conn.myconnection());
-
+            da = new MySqlDataAdapter("select * from buku where 1=1",conn.myconnection());
             ds.Tables["buku"].Clear();
-            da.Fill(ds, "buku");
+            da.Fill(ds,"buku");
             dataGridView1.DataSource = ds.Tables["buku"];
             dataGridView1.Refresh();
         }
