@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btndelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.btnsearch = new System.Windows.Forms.Button();
@@ -38,26 +37,21 @@
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bukuTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btndelete
-            // 
-            this.btndelete.Location = new System.Drawing.Point(561, 207);
-            this.btndelete.Name = "btndelete";
-            this.btndelete.Size = new System.Drawing.Size(75, 23);
-            this.btndelete.TabIndex = 20;
-            this.btndelete.Text = "Delete";
-            this.btndelete.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Delete});
             this.dataGridView1.Location = new System.Drawing.Point(47, 98);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(589, 103);
             this.dataGridView1.TabIndex = 19;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // txtsearch
             // 
@@ -74,6 +68,7 @@
             this.btnsearch.TabIndex = 17;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // btnbaru
             // 
@@ -83,6 +78,7 @@
             this.btnbaru.TabIndex = 16;
             this.btnbaru.Text = "CD baru";
             this.btnbaru.UseVisualStyleBackColor = true;
+            this.btnbaru.Click += new System.EventHandler(this.btnbaru_Click);
             // 
             // label1
             // 
@@ -126,12 +122,18 @@
             this.cDToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.cDToolStripMenuItem.Text = "CD";
             // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
+            // 
             // Formcd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btndelete);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.btnsearch);
@@ -150,8 +152,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btndelete;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox txtsearch;
         private System.Windows.Forms.Button btnsearch;
@@ -161,5 +161,6 @@
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bukuTAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cDToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewButtonColumn Delete;
     }
 }

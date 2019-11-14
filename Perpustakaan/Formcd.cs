@@ -50,7 +50,7 @@ namespace Perpustakaan
             conn = new connection();
             try
             {
-                string query = "Select judul from cd where 1=1";
+                string query = "Select * from cd where 1=1";
                 da = new MySqlDataAdapter(query, conn.myconnection());
                 da.Fill(ds, "cd");
                 dataGridView1.DataSource = ds.Tables["cd"];
@@ -59,6 +59,64 @@ namespace Perpustakaan
             catch (Exception ex)
             {
             }
+        }
+        void tampildata()
+        {
+            da = new MySqlDataAdapter("select * from cd", conn.myconnection());
+            ds = new DataSet();
+
+            da.Fill(ds, "cd");
+            dataGridView1.DataSource = ds.Tables["cd"];
+            dataGridView1.Refresh();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                MySqlCommand cmd = new MySqlCommand();
+
+
+                cmd.Connection = conn.myconnection();
+                cmd.CommandText = "delete from cd where judul='" + dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString() + "' and kode='" + dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString() + "'";
+                //MessageBox.Show(cmd.CommandText);
+
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("1 data delete");
+                tampildata();
+            }
+        }
+
+        private void btnbaru_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            datacd dc = new datacd();
+            if (dc.ShowDialog() == DialogResult.OK)
+            {
+                dc.ShowDialog();
+
+            }
+        }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            ds = new DataSet();
+            conn = new connection();
+            string query = "Select * from cd where 1=1";
+            try
+            {
+                query += " and judul like '%" + txtsearch.Text.ToUpper() + "%'";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+
+            da = new MySqlDataAdapter(query, conn.myconnection());
+            //ds.Tables["buku"].Clear();
+            da.Fill(ds, "cd");
+            dataGridView1.DataSource = ds.Tables["cd"];
+            dataGridView1.Refresh();
         }
     }
 }
