@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.btnsearch = new System.Windows.Forms.Button();
             this.btnbaru = new System.Windows.Forms.Button();
@@ -37,7 +38,6 @@
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bukuTAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +52,14 @@
             this.dataGridView1.Size = new System.Drawing.Size(589, 103);
             this.dataGridView1.TabIndex = 19;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
+            // 
+            // Delete
+            // 
+            this.Delete.HeaderText = "Delete";
+            this.Delete.Name = "Delete";
+            this.Delete.Text = "Delete";
+            this.Delete.UseColumnTextForButtonValue = true;
             // 
             // txtsearch
             // 
@@ -121,13 +129,6 @@
             this.cDToolStripMenuItem.Name = "cDToolStripMenuItem";
             this.cDToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
             this.cDToolStripMenuItem.Text = "CD";
-            // 
-            // Delete
-            // 
-            this.Delete.HeaderText = "Delete";
-            this.Delete.Name = "Delete";
-            this.Delete.Text = "Delete";
-            this.Delete.UseColumnTextForButtonValue = true;
             // 
             // Formcd
             // 

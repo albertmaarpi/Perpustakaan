@@ -24,8 +24,7 @@ namespace Perpustakaan
         }
         public databuku(int idbuku)
         {
-            InitializeComponent();
-          
+            InitializeComponent();          
             this.idbuku = idbuku;
         }
         public void loadbuku()
@@ -58,9 +57,7 @@ namespace Perpustakaan
                 cbkondisi.SelectedText= hasil["kondisi"].ToString();
                txtketerangan.Text= hasil["keterangan"].ToString();
                 txtnomorpanggil.Text = hasil["nomor_panggil"].ToString();
-            }
-           
-
+            }hasil.Close();          
         }
 
         private void bukuToolStripMenuItem_Click(object sender, EventArgs e)

@@ -8,14 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-<<<<<<< HEAD
 
-=======
->>>>>>> 0bc3522d4d77ddc6e770ca96aa17c3302ca13d50
 namespace Perpustakaan
 {
     public partial class datacd : Form
     {
+        public int idcd;
         public MySqlDataAdapter da;
         connection conn;
         DataSet ds;
@@ -23,15 +21,41 @@ namespace Perpustakaan
         {
             InitializeComponent();
         }
+        public datacd(int idcd)
+        {
+            InitializeComponent();
+            this.idcd = idcd;
+        }
+        public void loadcd()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "select * from cd where id_cd=@idcd";
+            cmd.Connection = conn.myconnection();
+            cmd.Parameters.Add(new MySqlParameter("@idcd", this.idcd));
+            MySqlDataReader hasil = cmd.ExecuteReader();
+            if (hasil.Read())
+            {
+                txtjudul.Text = hasil["judul"].ToString();
+                cbjenis.SelectedText = hasil["jenis"].ToString();
+                txtharga.Text = hasil["harga"].ToString();
+                rbketerangan.Text = hasil["keterangan"].ToString();
+                txtkode.Text = hasil["kode"].ToString(); ;
+                cbkondisi.SelectedText = hasil["kondisi"].ToString(); ;
+                txtrak.Text= hasil["rak"].ToString();
+            }
+            hasil.Close();
+            
+        }
 
-        private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
+
+
+            private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
             Formbuku fb = new Formbuku();
             if (fb.ShowDialog() == DialogResult.OK)
             {
                 fb.ShowDialog();
-
             }
         }
 
@@ -59,9 +83,7 @@ namespace Perpustakaan
 
         private void btninsert_Click(object sender, EventArgs e)
         {
-<<<<<<< HEAD
-           
-=======
+
             try
             {
                 MySqlCommand cmd = new MySqlCommand();
@@ -89,7 +111,13 @@ namespace Perpustakaan
         private void datacd_Load(object sender, EventArgs e)
         {
             conn = new connection();
->>>>>>> 0bc3522d4d77ddc6e770ca96aa17c3302ca13d50
+            loadcd();
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }

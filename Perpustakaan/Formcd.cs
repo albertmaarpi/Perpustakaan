@@ -118,5 +118,13 @@ namespace Perpustakaan
             dataGridView1.DataSource = ds.Tables["cd"];
             dataGridView1.Refresh();
         }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            int idcd = Convert.ToInt32(dataGridView1.CurrentRow.Cells[1].Value);
+            datacd dc = new datacd(idcd);
+            dc.ShowDialog();
+        }
     }
 }
