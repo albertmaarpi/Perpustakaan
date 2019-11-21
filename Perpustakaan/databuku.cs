@@ -67,6 +67,7 @@ namespace Perpustakaan
             try
             {
 
+              
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn.myconnection();
                 cmd.CommandText = "insert into buku (judul,sub_judul,nomor_panggil,nama_DDC,subjek,pengarang,penerbit,kota_terbit,tahun_terbit,edisi,volume,ISBN,kode,harga,bahasa,halaman_romawi,halaman_arab,tinggi,keterangan,keaslian,kondisi,status)" + " values (@judul,@sub_judul,@nomor_panggil,@nama_DDC,@subjek,@pengarang,@penerbit,@kota_terbit,@tahun_terbit,@edisi,@volume,@ISBN,@kode,@harga,@bahasa,@halaman_romawi,@halaman_arab,@tinggi,@keterangan,@keaslian,@kondisi,@status)";

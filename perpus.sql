@@ -68,7 +68,7 @@ CREATE TABLE `buku_ta` (
   `NRP` varchar(20) DEFAULT NULL,
   `pembimbing` varchar(255) DEFAULT NULL,
   `co_pembimbing` varchar(255) DEFAULT NULL,
-  `tahun` datetime DEFAULT NULL,
+  `tahun` varchar(4) DEFAULT NULL,
   `abstrak` varchar(255) DEFAULT NULL,
   `keterangan` varchar(255) DEFAULT NULL,
   `kondisi` varchar(255) DEFAULT NULL,
@@ -77,9 +77,12 @@ CREATE TABLE `buku_ta` (
   `penguji3` varchar(255) DEFAULT NULL,
   `available` tinyint(2) DEFAULT 1,
   PRIMARY KEY (`id_bukuta`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `buku_ta` */
+
+insert  into `buku_ta`(`id_bukuta`,`judul`,`pengarang`,`NRP`,`pembimbing`,`co_pembimbing`,`tahun`,`abstrak`,`keterangan`,`kondisi`,`penguji1`,`penguji2`,`penguji3`,`available`) values 
+(1,'lala','lala','lala','lala','lala','0000','lala','lala','lala','lala','lala','lala',0);
 
 /*Table structure for table `cd` */
 
