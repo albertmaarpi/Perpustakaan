@@ -15,14 +15,49 @@ namespace Perpustakaan
         public MySqlDataAdapter da;
         connection conn;
         DataSet ds;
+        public int idbukuta;
+        public databukuta(int idbukuta)
+        {
+            InitializeComponent();
+            this.idbukuta = idbukuta;
+        }
+
+        public void loadbukuta()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "select * from buku_ta where id_bukuta=@idbukuta";
+            cmd.Connection = conn.myconnection();
+            cmd.Parameters.Add(new MySqlParameter("@idbukuta", this.idbukuta));
+            MySqlDataReader hasil = cmd.ExecuteReader();
+            if (hasil.Read())
+            {
+                txtjudul.Text = hasil["judul"].ToString();
+                txtpengarang.Text = hasil["pengarang"].ToString();
+                txtnrp.Text = hasil["nrp"].ToString();
+                cbpembimbing.SelectedText = hasil["pembimbing"].ToString();
+                cbcopembimbing.SelectedText = hasil["co_pembimbing"].ToString();
+                cbtahun.SelectedText = hasil["tahun"].ToString();
+                txtabstrak.Text = hasil["abstrak"].ToString();
+                rbketerangan.Text = hasil["keterangan"].ToString();
+                cbkondisi.SelectedText = hasil["kondisi"].ToString();
+                cbpenguji1.SelectedText = hasil["penguji1"].ToString();
+                cbpenguji2.SelectedText = hasil["penguji2"].ToString();
+                cbpenguji3.SelectedText = hasil["penguji3"].ToString();
+            }
+            hasil.Close();
+        }
+
+
         public databukuta()
         {
             InitializeComponent();
+            
         }
 
         private void databukuta_Load(object sender, EventArgs e)
         {
             conn = new connection();
+            loadbukuta();
         }
 
         private void bukuToolStripMenuItem_Click(object sender, EventArgs e)

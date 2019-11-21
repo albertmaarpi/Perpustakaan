@@ -47,12 +47,14 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DELETE});
-            this.dataGridView1.Location = new System.Drawing.Point(45, 92);
+            this.dataGridView1.Location = new System.Drawing.Point(60, 113);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(589, 103);
+            this.dataGridView1.Size = new System.Drawing.Size(785, 127);
             this.dataGridView1.TabIndex = 26;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // DELETE
@@ -64,16 +66,18 @@
             // 
             // txtsearch
             // 
-            this.txtsearch.Location = new System.Drawing.Point(476, 49);
+            this.txtsearch.Location = new System.Drawing.Point(635, 60);
+            this.txtsearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtsearch.Name = "txtsearch";
-            this.txtsearch.Size = new System.Drawing.Size(170, 20);
+            this.txtsearch.Size = new System.Drawing.Size(225, 22);
             this.txtsearch.TabIndex = 25;
             // 
             // btnsearch
             // 
-            this.btnsearch.Location = new System.Drawing.Point(373, 47);
+            this.btnsearch.Location = new System.Drawing.Point(497, 58);
+            this.btnsearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(75, 23);
+            this.btnsearch.Size = new System.Drawing.Size(100, 28);
             this.btnsearch.TabIndex = 24;
             this.btnsearch.Text = "Search";
             this.btnsearch.UseVisualStyleBackColor = true;
@@ -81,9 +85,10 @@
             // 
             // btnbaru
             // 
-            this.btnbaru.Location = new System.Drawing.Point(270, 46);
+            this.btnbaru.Location = new System.Drawing.Point(360, 57);
+            this.btnbaru.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnbaru.Name = "btnbaru";
-            this.btnbaru.Size = new System.Drawing.Size(97, 23);
+            this.btnbaru.Size = new System.Drawing.Size(129, 28);
             this.btnbaru.TabIndex = 23;
             this.btnbaru.Text = "Buku TA baru";
             this.btnbaru.UseVisualStyleBackColor = true;
@@ -93,55 +98,59 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 39);
+            this.label1.Location = new System.Drawing.Point(37, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 31);
+            this.label1.Size = new System.Drawing.Size(148, 39);
             this.label1.TabIndex = 22;
             this.label1.Text = "Buku TA";
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.bukuToolStripMenuItem,
             this.bukuTAToolStripMenuItem,
             this.cDToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
             this.menuStrip1.TabIndex = 21;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // bukuToolStripMenuItem
             // 
             this.bukuToolStripMenuItem.Name = "bukuToolStripMenuItem";
-            this.bukuToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.bukuToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.bukuToolStripMenuItem.Text = "Buku";
             this.bukuToolStripMenuItem.Click += new System.EventHandler(this.bukuToolStripMenuItem_Click);
             // 
             // bukuTAToolStripMenuItem
             // 
             this.bukuTAToolStripMenuItem.Name = "bukuTAToolStripMenuItem";
-            this.bukuTAToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
+            this.bukuTAToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.bukuTAToolStripMenuItem.Text = "Buku TA";
             // 
             // cDToolStripMenuItem
             // 
             this.cDToolStripMenuItem.Name = "cDToolStripMenuItem";
-            this.cDToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.cDToolStripMenuItem.Size = new System.Drawing.Size(41, 24);
             this.cDToolStripMenuItem.Text = "CD";
             this.cDToolStripMenuItem.Click += new System.EventHandler(this.cDToolStripMenuItem_Click);
             // 
             // Formbukuta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.txtsearch);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.btnbaru);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Formbukuta";
             this.Text = "Formbukuta";
             this.Load += new System.EventHandler(this.Formbukuta_Load);

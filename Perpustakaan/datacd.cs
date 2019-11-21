@@ -111,6 +111,7 @@ namespace Perpustakaan
         private void datacd_Load(object sender, EventArgs e)
         {
             conn = new connection();
+<<<<<<< HEAD
             loadcd();
 
         }
@@ -118,6 +119,8 @@ namespace Perpustakaan
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+=======
+>>>>>>> d9c3d66962d633f8017190cca10bb8d115d20ad7
         }
     }
 }
