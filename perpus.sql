@@ -29,7 +29,7 @@ CREATE TABLE `buku` (
   `pengarang` varchar(255) DEFAULT NULL,
   `penerbit` varchar(255) DEFAULT NULL,
   `kota_terbit` varchar(255) DEFAULT NULL,
-  `tahun_terbit` datetime DEFAULT NULL,
+  `tahun_terbit` varchar(5) DEFAULT NULL,
   `edisi` varchar(255) DEFAULT NULL,
   `volume` varchar(255) DEFAULT NULL,
   `ISBN` varchar(255) DEFAULT NULL,
@@ -43,17 +43,19 @@ CREATE TABLE `buku` (
   `keaslian` varchar(255) DEFAULT NULL,
   `kondisi` varchar(255) DEFAULT NULL,
   `id_buku` int(30) unsigned NOT NULL AUTO_INCREMENT,
-  `status` varchar(10) DEFAULT NULL,
-  `available` tinyint(2) DEFAULT NULL,
+  `status` tinyint(1) DEFAULT 1,
+  `tanggal_datang` timestamp NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`judul`,`id_buku`),
   KEY `id_buku` (`id_buku`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `buku` */
 
-insert  into `buku`(`judul`,`sub_judul`,`nomor_panggil`,`nama_DDC`,`subjek`,`pengarang`,`penerbit`,`kota_terbit`,`tahun_terbit`,`edisi`,`volume`,`ISBN`,`kode`,`harga`,`bahasa`,`halaman_romawi`,`halaman_arab`,`tinggi`,`keterangan`,`keaslian`,`kondisi`,`id_buku`,`status`,`available`) values 
-('haha','haha','haha','haha','haha','haha','haha','haha','2019-11-07 13:19:31','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha',1,NULL,NULL),
-('hehe','hehe','hehe','hehe','hehe','hehe','hehe','hehe','2019-11-07 13:33:31','hehe','hehe','hehe','hehe','hehe','hehe','hehe','e','h',NULL,NULL,NULL,2,NULL,NULL);
+insert  into `buku`(`judul`,`sub_judul`,`nomor_panggil`,`nama_DDC`,`subjek`,`pengarang`,`penerbit`,`kota_terbit`,`tahun_terbit`,`edisi`,`volume`,`ISBN`,`kode`,`harga`,`bahasa`,`halaman_romawi`,`halaman_arab`,`tinggi`,`keterangan`,`keaslian`,`kondisi`,`id_buku`,`status`,`tanggal_datang`) values 
+('as','sdas','sdas','sdas','ss','asdasad','das','asda','0000-','asd','sd','asd','sdas','asd','asd','asd','asd','s','sd','ssds','sadsa',3,0,'2019-11-14 10:09:48'),
+('haha','haha','haha','haha','haha','haha','haha','haha','2019-','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha',1,NULL,'2019-11-14 10:09:48'),
+('hehe','hehe','hehe','hehe','hehe','hehe','hehe','hehe','2019-','hehe','hehe','hehe','hehe','hehe','hehe','hehe','e','h',NULL,NULL,NULL,2,NULL,'2019-11-14 10:09:48'),
+('s','s','s','s','','s','s','s','','s','s','','ss','s','s','s','s','s','ssds','','',4,0,'2019-11-14 10:15:53');
 
 /*Table structure for table `buku_ta` */
 
