@@ -15,6 +15,23 @@ namespace Perpustakaan
         public MySqlDataAdapter da;
         connection conn;
         DataSet ds;
+        public int idbukuta;
+        public databukuta(int idbukuta)
+        {
+            InitializeComponent();
+            this.idbukuta = idbukuta;
+        }
+
+        public loadbukuta()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "select * from id_bukuta where id_bukuta=@idbukuta";
+            cmd.Connection = conn.myconnection();
+            cmd.Parameters.Add(new MySqlParameter("@idbukuta"), this.idbukuta);
+            cmd.ExecuteReader = ()
+        }
+
+
         public databukuta()
         {
             InitializeComponent();

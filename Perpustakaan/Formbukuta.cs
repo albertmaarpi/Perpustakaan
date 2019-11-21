@@ -17,9 +17,11 @@ namespace Perpustakaan
         public MySqlDataAdapter da;
         DataSet ds;
         connection conn;
+
         public Formbukuta()
         {
             InitializeComponent();
+          
         }
 
         private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -126,6 +128,13 @@ namespace Perpustakaan
             da.Fill(ds, "buku_ta");
             dataGridView1.DataSource = ds.Tables["buku_ta"];
             dataGridView1.Refresh();
+        }
+
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int idbukuta = Convert.ToInt32(dataGridView1.CurrentRow.Cells[1].Value);
+            databukuta db = new databukuta(idbukuta);
+            db.ShowDialog();
         }
     }
 }
