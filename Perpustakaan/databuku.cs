@@ -105,6 +105,11 @@ namespace Perpustakaan
                 MessageBox.Show(ex.Message.ToString());
             }
         }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 //'" + txtjudul.Text + "','" + txtsub.Text + "','" + txtnomorpanggil.Text + "','" + txtddc.Text + "','ss','" + txtpengarang.Text + "','" + txtpenerbit.Text +"','"+txtkotaterbit.Text+"','"+txttahunterbit.Text+"','"+txtedisi.Text+"','"+txtvol.Text+"','"+txtisbn.Text+"','"+txtkode.Text+"','"+txtharga.Text+"','"+txtbahasa.Text+"','"+txtromawi.Text+"','"+txtarab.Text+"','"+txttinggi.Text+"','"+txtketerangan.Text+"','ssds','sadsa','sdad'
