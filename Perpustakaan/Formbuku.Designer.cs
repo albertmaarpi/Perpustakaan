@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.DELETE = new System.Windows.Forms.DataGridViewButtonColumn();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.btnsearch = new System.Windows.Forms.Button();
             this.btnbaru = new System.Windows.Forms.Button();
@@ -38,6 +37,7 @@
             this.cDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.DELETE = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -49,17 +49,13 @@
             this.DELETE});
             this.dataGridView1.Location = new System.Drawing.Point(52, 93);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(589, 103);
+            this.dataGridView1.Size = new System.Drawing.Size(589, 195);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+//            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
-            // 
-            // DELETE
-            // 
-            this.DELETE.HeaderText = "DELETE";
-            this.DELETE.Name = "DELETE";
-            this.DELETE.Text = "DELETE";
             // 
             // txtsearch
             // 
@@ -131,6 +127,12 @@
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            // 
+            // DELETE
+            // 
+            this.DELETE.HeaderText = "DELETE";
+            this.DELETE.Name = "DELETE";
+            this.DELETE.Text = "DELETE";
             // 
             // Formbuku
             // 

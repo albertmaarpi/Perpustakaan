@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 0bc3522d4d77ddc6e770ca96aa17c3302ca13d50
 namespace Perpustakaan
 {
     public partial class datacd : Form
@@ -55,6 +59,9 @@ namespace Perpustakaan
 
         private void btninsert_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+           
+=======
             try
             {
                 MySqlCommand cmd = new MySqlCommand();
@@ -82,6 +89,7 @@ namespace Perpustakaan
         private void datacd_Load(object sender, EventArgs e)
         {
             conn = new connection();
+>>>>>>> 0bc3522d4d77ddc6e770ca96aa17c3302ca13d50
         }
     }
 }
