@@ -111,6 +111,7 @@ namespace Perpustakaan
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             dataGridView1.Rows[e.RowIndex].Cells[0].Value = "DELETE";
+            dataGridView1.Rows[e.RowIndex].Cells[0].Value = "EDIT";
         }
         void tampildata()
         {
@@ -136,11 +137,26 @@ namespace Perpustakaan
                 MessageBox.Show("1 data delete");
                 tampildata();
             }
+            if(e.ColumnIndex==1)
+            {
+                this.Hide();
+                databuku db = new databuku(10);
+                if (db.ShowDialog() == DialogResult.OK)
+                {
+                    db.ShowDialog();
+
+                }
+            }
         }
 
         private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+          
         }
     }
 }

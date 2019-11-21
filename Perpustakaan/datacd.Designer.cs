@@ -96,6 +96,7 @@
             this.btninsert.TabIndex = 73;
             this.btninsert.Text = "Insert";
             this.btninsert.UseVisualStyleBackColor = true;
+            this.btninsert.Click += new System.EventHandler(this.btninsert_Click);
             // 
             // rbketerangan
             // 

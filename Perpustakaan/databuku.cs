@@ -21,6 +21,11 @@ namespace Perpustakaan
         {
             InitializeComponent();
         }
+        public databuku(int idbuku)
+        {
+            InitializeComponent();
+            MessageBox.Show(idbuku+"");            
+        }
 
         private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -65,9 +70,7 @@ namespace Perpustakaan
         {
 
             try
-            {
-
-              
+            {             
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn.myconnection();
                 cmd.CommandText = "insert into buku (judul,sub_judul,nomor_panggil,nama_DDC,subjek,pengarang,penerbit,kota_terbit,tahun_terbit,edisi,volume,ISBN,kode,harga,bahasa,halaman_romawi,halaman_arab,tinggi,keterangan,keaslian,kondisi,status)" + " values (@judul,@sub_judul,@nomor_panggil,@nama_DDC,@subjek,@pengarang,@penerbit,@kota_terbit,@tahun_terbit,@edisi,@volume,@ISBN,@kode,@harga,@bahasa,@halaman_romawi,@halaman_arab,@tinggi,@keterangan,@keaslian,@kondisi,@status)";
@@ -92,14 +95,10 @@ namespace Perpustakaan
                 cmd.Parameters.Add(new MySqlParameter("@keterangan", txtketerangan.Text));
                 cmd.Parameters.Add(new MySqlParameter("@keaslian", cbasli.Text));
                 cmd.Parameters.Add(new MySqlParameter("@kondisi", cbkondisi.Text));
-                //cmd.Parameters.Add(new MySqlParameter("@tanggal_datang", DateTime.Now.ToString()));
-
-          
+                //cmd.Parameters.Add(new MySqlParameter("@tanggal_datang", DateTime.Now.ToString()) 
                 //MessageBox.Show(cmd.CommandText);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("1 data inserted");
-
-
             }
             catch (Exception ex)
             {
