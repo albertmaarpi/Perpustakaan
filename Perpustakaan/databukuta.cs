@@ -65,9 +65,9 @@ namespace Perpustakaan
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn.myconnection();
                 cmd.CommandText = "insert into buku_ta" +
-                    "(judul,pengarang,nrp,pembimbing,co_pembimbing,tahun,abstrak,keterangan,kondisi,penguji1,penguji2,penguji3,available)"
+                    "(judul,pengarang,nrp,pembimbing,co_pembimbing,tahun,abstrak,keterangan,kondisi,penguji1,penguji2,penguji3)"
                     +"values(@judul,@pengarang,@nrp,@pembimbing,@co_pembimbing,@tahun,@abstrak,@keterangan,@kondisi,@penguji1,@penguji2," +
-                    "@penguji3,@available)";
+                    "@penguji3)";
                 cmd.Parameters.Add(new MySqlParameter("@judul", txtjudul.Text));
                 cmd.Parameters.Add(new MySqlParameter("@pengarang", txtpengarang.Text));
                 cmd.Parameters.Add(new MySqlParameter("@nrp", txtnrp.Text));
@@ -80,7 +80,7 @@ namespace Perpustakaan
                 cmd.Parameters.Add(new MySqlParameter("@penguji1", cbpenguji1.Text));
                 cmd.Parameters.Add(new MySqlParameter("@penguji2", cbpenguji2.Text));
                 cmd.Parameters.Add(new MySqlParameter("@penguji3", cbpenguji3.Text));
-                cmd.Parameters.Add(new MySqlParameter("@available", cbavailable.Text));
+              
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("insert successful");
             }

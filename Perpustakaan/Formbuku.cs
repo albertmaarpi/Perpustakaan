@@ -111,7 +111,7 @@ namespace Perpustakaan
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             dataGridView1.Rows[e.RowIndex].Cells[0].Value = "DELETE";
-            dataGridView1.Rows[e.RowIndex].Cells[0].Value = "EDIT";
+            
         }
         void tampildata()
         {
@@ -127,8 +127,6 @@ namespace Perpustakaan
             if(e.ColumnIndex==0)
             {
                 MySqlCommand cmd = new MySqlCommand();
-
-
                 cmd.Connection = conn.myconnection();
                 cmd.CommandText = "delete from buku where nama_DDC='" + dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString() + "'";
                 //MessageBox.Show(cmd.CommandText);
@@ -137,16 +135,7 @@ namespace Perpustakaan
                 MessageBox.Show("1 data delete");
                 tampildata();
             }
-            if(e.ColumnIndex==1)
-            {
-                this.Hide();
-                databuku db = new databuku(10);
-                if (db.ShowDialog() == DialogResult.OK)
-                {
-                    db.ShowDialog();
-
-                }
-            }
+           
         }
 
         private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -154,9 +143,12 @@ namespace Perpustakaan
 
         }
 
-        private void dataGridView1_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+       
+        private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-          
+            int idbuku = Convert.ToInt32(dataGridView1.CurrentRow.Cells[1].Value);
+            databuku db = new databuku(idbuku);
+            db.ShowDialog();
         }
     }
 }

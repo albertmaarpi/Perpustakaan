@@ -38,7 +38,6 @@
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.DELETE = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.EDIt = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -47,16 +46,15 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.DELETE,
-            this.EDIt});
+            this.DELETE});
             this.dataGridView1.Location = new System.Drawing.Point(52, 93);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(589, 103);
+            this.dataGridView1.Size = new System.Drawing.Size(589, 195);
             this.dataGridView1.TabIndex = 12;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+//            this.dataGridView1.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentDoubleClick);
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             // 
             // txtsearch
@@ -134,16 +132,7 @@
             // 
             this.DELETE.HeaderText = "DELETE";
             this.DELETE.Name = "DELETE";
-            this.DELETE.ReadOnly = true;
             this.DELETE.Text = "DELETE";
-            // 
-            // EDIt
-            // 
-            this.EDIt.HeaderText = "EDIT";
-            this.EDIt.Name = "EDIt";
-            this.EDIt.ReadOnly = true;
-            this.EDIt.Text = "EDIT";
-            this.EDIt.UseColumnTextForButtonValue = true;
             // 
             // Formbuku
             // 
@@ -178,6 +167,5 @@
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.DataGridViewButtonColumn DELETE;
-        private System.Windows.Forms.DataGridViewButtonColumn EDIt;
     }
 }

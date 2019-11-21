@@ -14,6 +14,7 @@ namespace Perpustakaan
 {
     public partial class databuku : Form
     {
+        public int idbuku;
         public MySqlDataAdapter da;
         DataSet ds;
         connection conn;
@@ -24,7 +25,42 @@ namespace Perpustakaan
         public databuku(int idbuku)
         {
             InitializeComponent();
-            MessageBox.Show(idbuku+"");            
+          
+            this.idbuku = idbuku;
+        }
+        public void loadbuku()
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.CommandText = "select * from buku where id_buku=@idbuku";
+            cmd.Connection = conn.myconnection();
+            cmd.Parameters.Add(new MySqlParameter("@idbuku",this.idbuku));
+            MySqlDataReader hasil = cmd.ExecuteReader();
+            if(hasil.Read())
+            {
+                txtjudul.Text = hasil["judul"].ToString();
+                txtsub.Text = hasil["sub_judul"].ToString();
+                txtkode.Text = hasil["kode"].ToString();
+                txtddc.Text = hasil["nama_DDC"].ToString();
+                cbsubjek.SelectedText = hasil["subjek"].ToString();
+                txtpengarang.Text = hasil["pengarang"].ToString();
+                txtpenerbit.Text = hasil["penerbit"].ToString();
+                txtkotaterbit.Text = hasil["kota_terbit"].ToString();
+                cbtahun.SelectedText = hasil["tahun_terbit"].ToString();
+                txtedisi.Text = hasil["edisi"].ToString();
+                txtvol.Text = hasil["volume"].ToString();
+                txtisbn.Text = hasil["ISBN"].ToString();
+                txtharga.Text = hasil["HARGA"].ToString();
+                txtbahasa.Text = hasil["bahasa"].ToString();
+                txtromawi.Text = hasil["halaman_romawi"].ToString();
+                txtarab.Text = hasil["halaman_arab"].ToString();
+                txttinggi.Text = hasil["tinggi"].ToString();
+                cbasli.SelectedText = hasil["keaslian"].ToString();
+                cbkondisi.SelectedText= hasil["kondisi"].ToString();
+               txtketerangan.Text= hasil["keterangan"].ToString();
+                txtnomorpanggil.Text = hasil["nomor_panggil"].ToString();
+            }
+           
+
         }
 
         private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
@@ -64,6 +100,7 @@ namespace Perpustakaan
         {
             conn = new connection();
             ds = new DataSet();
+            loadbuku();
         }
        
         private void btninsert_Click(object sender, EventArgs e)
@@ -73,7 +110,7 @@ namespace Perpustakaan
             {             
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn.myconnection();
-                cmd.CommandText = "insert into buku (judul,sub_judul,nomor_panggil,nama_DDC,subjek,pengarang,penerbit,kota_terbit,tahun_terbit,edisi,volume,ISBN,kode,harga,bahasa,halaman_romawi,halaman_arab,tinggi,keterangan,keaslian,kondisi,status)" + " values (@judul,@sub_judul,@nomor_panggil,@nama_DDC,@subjek,@pengarang,@penerbit,@kota_terbit,@tahun_terbit,@edisi,@volume,@ISBN,@kode,@harga,@bahasa,@halaman_romawi,@halaman_arab,@tinggi,@keterangan,@keaslian,@kondisi,@status)";
+                cmd.CommandText = "insert into buku (judul,sub_judul,nomor_panggil,nama_DDC,subjek,pengarang,penerbit,kota_terbit,tahun_terbit,edisi,volume,ISBN,kode,harga,bahasa,halaman_romawi,halaman_arab,tinggi,keterangan,keaslian,kondisi)" + " values (@judul,@sub_judul,@nomor_panggil,@nama_DDC,@subjek,@pengarang,@penerbit,@kota_terbit,@tahun_terbit,@edisi,@volume,@ISBN,@kode,@harga,@bahasa,@halaman_romawi,@halaman_arab,@tinggi,@keterangan,@keaslian,@kondisi)";
                 cmd.Parameters.Add(new MySqlParameter("@judul", txtjudul.Text));
                 cmd.Parameters.Add(new MySqlParameter("@sub_judul", txtharga.Text));
                 cmd.Parameters.Add(new MySqlParameter("@nomor_panggil", txtnomorpanggil.Text));
@@ -107,6 +144,11 @@ namespace Perpustakaan
         }
 
         private void btnupdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
