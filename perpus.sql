@@ -75,7 +75,7 @@ CREATE TABLE `buku_ta` (
   `penguji1` varchar(255) DEFAULT NULL,
   `penguji2` varchar(255) DEFAULT NULL,
   `penguji3` varchar(255) DEFAULT NULL,
-  `available` tinyint(2) DEFAULT NULL,
+  `available` tinyint(2) DEFAULT 1,
   PRIMARY KEY (`id_bukuta`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -94,7 +94,8 @@ CREATE TABLE `cd` (
   `kode` varchar(255) DEFAULT NULL,
   `kondisi` varchar(255) DEFAULT NULL,
   `rak` varchar(255) DEFAULT NULL,
-  `tanggal` datetime DEFAULT NULL,
+  `tanggal_datang` timestamp NULL DEFAULT current_timestamp(),
+  `status` tinyint(2) DEFAULT 1,
   PRIMARY KEY (`id_cd`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
