@@ -55,7 +55,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtedisi = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txttahunterbit = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtkotaterbit = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -76,10 +75,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.txtkode = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
             this.cbasli = new System.Windows.Forms.ComboBox();
             this.cbkondisi = new System.Windows.Forms.ComboBox();
-            this.cbavail = new System.Windows.Forms.ComboBox();
+            this.cbtahun = new System.Windows.Forms.ComboBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -325,14 +323,6 @@
             this.label10.TabIndex = 76;
             this.label10.Text = "Edisi";
             // 
-            // txttahunterbit
-            // 
-            this.txttahunterbit.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txttahunterbit.Location = new System.Drawing.Point(146, 318);
-            this.txttahunterbit.Name = "txttahunterbit";
-            this.txttahunterbit.Size = new System.Drawing.Size(144, 21);
-            this.txttahunterbit.TabIndex = 75;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -520,16 +510,6 @@
             this.label25.TabIndex = 110;
             this.label25.Text = "Kode";
             // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(51, 426);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(65, 16);
-            this.label26.TabIndex = 112;
-            this.label26.Text = "Available";
-            // 
             // cbasli
             // 
             this.cbasli.FormattingEnabled = true;
@@ -553,26 +533,27 @@
             this.cbkondisi.Size = new System.Drawing.Size(144, 21);
             this.cbkondisi.TabIndex = 116;
             // 
-            // cbavail
+            // cbtahun
             // 
-            this.cbavail.FormattingEnabled = true;
-            this.cbavail.Items.AddRange(new object[] {
-            "ya",
-            "tidak"});
-            this.cbavail.Location = new System.Drawing.Point(146, 425);
-            this.cbavail.Name = "cbavail";
-            this.cbavail.Size = new System.Drawing.Size(144, 21);
-            this.cbavail.TabIndex = 117;
+            this.cbtahun.FormattingEnabled = true;
+            this.cbtahun.Items.AddRange(new object[] {
+            "2000",
+            "2001",
+            "2002",
+            "2003"});
+            this.cbtahun.Location = new System.Drawing.Point(146, 317);
+            this.cbtahun.Name = "cbtahun";
+            this.cbtahun.Size = new System.Drawing.Size(144, 21);
+            this.cbtahun.TabIndex = 118;
             // 
             // databuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 480);
-            this.Controls.Add(this.cbavail);
+            this.Controls.Add(this.cbtahun);
             this.Controls.Add(this.cbkondisi);
             this.Controls.Add(this.cbasli);
-            this.Controls.Add(this.label26);
             this.Controls.Add(this.txtkode);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.label24);
@@ -599,7 +580,6 @@
             this.Controls.Add(this.label14);
             this.Controls.Add(this.txtedisi);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.txttahunterbit);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtkotaterbit);
             this.Controls.Add(this.label8);
@@ -657,7 +637,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtedisi;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txttahunterbit;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtkotaterbit;
         private System.Windows.Forms.Label label8;
@@ -678,9 +657,8 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.TextBox txtkode;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox cbasli;
         private System.Windows.Forms.ComboBox cbkondisi;
-        private System.Windows.Forms.ComboBox cbavail;
+        private System.Windows.Forms.ComboBox cbtahun;
     }
 }
