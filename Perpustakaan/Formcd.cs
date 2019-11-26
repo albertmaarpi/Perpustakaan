@@ -121,7 +121,7 @@ namespace Perpustakaan
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            this.Hide();
             int idcd = Convert.ToInt32(dataGridView1.CurrentRow.Cells[1].Value);
             datacd dc = new datacd(idcd);
             dc.ShowDialog();

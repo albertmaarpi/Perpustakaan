@@ -31,6 +31,7 @@ namespace Perpustakaan
             MySqlDataReader hasil = cmd.ExecuteReader();
             if (hasil.Read())
             {
+                lblidbukuta.Text = hasil["id_bukuta"].ToString();
                 txtjudul.Text = hasil["judul"].ToString();
                 txtpengarang.Text = hasil["pengarang"].ToString();
                 txtnrp.Text = hasil["nrp"].ToString();
@@ -99,9 +100,7 @@ namespace Perpustakaan
             {
                 MySqlCommand cmd = new MySqlCommand();
                 cmd.Connection = conn.myconnection();
-                cmd.CommandText = "insert into buku_ta" +
-                    "(judul,pengarang,nrp,pembimbing,co_pembimbing,tahun,abstrak,keterangan,kondisi,penguji1,penguji2,penguji3)"
-                    +"values(@judul,@pengarang,@nrp,@pembimbing,@co_pembimbing,@tahun,@abstrak,@keterangan,@kondisi,@penguji1,@penguji2," +
+                cmd.CommandText = "insert into buku_ta" +                    "(judul,pengarang,nrp,pembimbing,co_pembimbing,tahun,abstrak,keterangan,kondisi,penguji1,penguji2,penguji3)"+"values(@judul,@pengarang,@nrp,@pembimbing,@co_pembimbing,@tahun,@abstrak,@keterangan,@kondisi,@penguji1,@penguji2," +
                     "@penguji3)";
                 cmd.Parameters.Add(new MySqlParameter("@judul", txtjudul.Text));
                 cmd.Parameters.Add(new MySqlParameter("@pengarang", txtpengarang.Text));
@@ -123,6 +122,34 @@ namespace Perpustakaan
             {
                 MessageBox.Show(ex.Message);
 
+            }
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn.myconnection();
+            cmd.CommandText = "update buku_ta set judul=@judul , pengarang=@pengarang , nrp=@nrp , pembimbing=@pembimbing , co_pembimbing=@co_pembimbing , tahun=@tahun , abstrak=@abstrak , keterangan=@keterangan ,kondisi=@kondisi , penguji1=@penguji1 , penguji2=@penguji2 , penguji3=@penguji3 where id_bukuta=@id_bukuta ";
+            cmd.Parameters.Add(new MySqlParameter("@judul", txtjudul.Text));
+            cmd.Parameters.Add(new MySqlParameter("@pengarang", txtpengarang.Text));
+            cmd.Parameters.Add(new MySqlParameter("@nrp", txtnrp.Text));
+            cmd.Parameters.Add(new MySqlParameter("@pembimbing", cbpembimbing.Text));
+            cmd.Parameters.Add(new MySqlParameter("@co_pembimbing", cbcopembimbing.Text));
+            cmd.Parameters.Add(new MySqlParameter("@tahun", cbtahun.SelectedText));
+            cmd.Parameters.Add(new MySqlParameter("@abstrak", txtabstrak.Text));
+            cmd.Parameters.Add(new MySqlParameter("@keterangan", rbketerangan.Text));
+            cmd.Parameters.Add(new MySqlParameter("@kondisi", cbkondisi.Text));
+            cmd.Parameters.Add(new MySqlParameter("@penguji1", cbpenguji1.Text));
+            cmd.Parameters.Add(new MySqlParameter("@penguji2", cbpenguji2.Text));
+            cmd.Parameters.Add(new MySqlParameter("@penguji3", cbpenguji3.Text));
+            cmd.Parameters.Add(new MySqlParameter("@id_bukuta", lblidbukuta.Text));
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("berhasil");
+            this.Hide();
+            Formbukuta fb = new Formbukuta();
+            if (fb.ShowDialog() == DialogResult.OK)
+            {
+                fb.ShowDialog();
             }
         }
     }

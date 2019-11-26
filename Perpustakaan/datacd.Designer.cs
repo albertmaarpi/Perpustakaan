@@ -50,6 +50,7 @@
             this.cbkondisi = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.cbjenis = new System.Windows.Forms.ComboBox();
+            this.lblidcd = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +86,7 @@
             this.btnupdate.TabIndex = 74;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btninsert
             // 
@@ -230,7 +232,7 @@
             "baik",
             "rusak"});
             this.cbkondisi.Location = new System.Drawing.Point(146, 251);
-            this.cbkondisi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbkondisi.Margin = new System.Windows.Forms.Padding(2);
             this.cbkondisi.Name = "cbkondisi";
             this.cbkondisi.Size = new System.Drawing.Size(132, 21);
             this.cbkondisi.TabIndex = 79;
@@ -253,16 +255,25 @@
             "non-fiksi",
             "fiksi"});
             this.cbjenis.Location = new System.Drawing.Point(146, 100);
-            this.cbjenis.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbjenis.Margin = new System.Windows.Forms.Padding(2);
             this.cbjenis.Name = "cbjenis";
             this.cbjenis.Size = new System.Drawing.Size(132, 21);
             this.cbjenis.TabIndex = 81;
+            // 
+            // lblidcd
+            // 
+            this.lblidcd.AutoSize = true;
+            this.lblidcd.Location = new System.Drawing.Point(213, 47);
+            this.lblidcd.Name = "lblidcd";
+            this.lblidcd.Size = new System.Drawing.Size(0, 13);
+            this.lblidcd.TabIndex = 82;
             // 
             // datacd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblidcd);
             this.Controls.Add(this.cbjenis);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.cbkondisi);
@@ -316,5 +327,6 @@
         private System.Windows.Forms.ComboBox cbkondisi;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cbjenis;
+        private System.Windows.Forms.Label lblidcd;
     }
 }

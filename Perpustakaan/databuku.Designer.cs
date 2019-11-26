@@ -78,6 +78,7 @@
             this.cbasli = new System.Windows.Forms.ComboBox();
             this.cbkondisi = new System.Windows.Forms.ComboBox();
             this.cbtahun = new System.Windows.Forms.ComboBox();
+            this.lblidbuku = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -548,11 +549,20 @@
             this.cbtahun.Size = new System.Drawing.Size(144, 21);
             this.cbtahun.TabIndex = 118;
             // 
+            // lblidbuku
+            // 
+            this.lblidbuku.AutoSize = true;
+            this.lblidbuku.Location = new System.Drawing.Point(330, 42);
+            this.lblidbuku.Name = "lblidbuku";
+            this.lblidbuku.Size = new System.Drawing.Size(0, 13);
+            this.lblidbuku.TabIndex = 119;
+            // 
             // databuku
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 480);
+            this.Controls.Add(this.lblidbuku);
             this.Controls.Add(this.cbtahun);
             this.Controls.Add(this.cbkondisi);
             this.Controls.Add(this.cbasli);
@@ -662,5 +672,6 @@
         private System.Windows.Forms.ComboBox cbasli;
         private System.Windows.Forms.ComboBox cbkondisi;
         private System.Windows.Forms.ComboBox cbtahun;
+        private System.Windows.Forms.Label lblidbuku;
     }
 }

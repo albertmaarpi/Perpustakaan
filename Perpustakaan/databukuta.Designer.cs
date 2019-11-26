@@ -58,11 +58,10 @@
             this.txtjudul = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtrak = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.cbkondisi = new System.Windows.Forms.ComboBox();
             this.cbavailable = new System.Windows.Forms.ComboBox();
+            this.lblidbukuta = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +83,7 @@
             this.btnupdate.TabIndex = 89;
             this.btnupdate.Text = "Update";
             this.btnupdate.UseVisualStyleBackColor = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btninsert
             // 
@@ -352,29 +352,11 @@
             this.menuStrip1.TabIndex = 61;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(63, 288);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(27, 16);
-            this.label13.TabIndex = 91;
-            this.label13.Text = "rak";
-            // 
-            // txtrak
-            // 
-            this.txtrak.Font = new System.Drawing.Font("Tahoma", 8.25F);
-            this.txtrak.Location = new System.Drawing.Point(135, 283);
-            this.txtrak.Name = "txtrak";
-            this.txtrak.Size = new System.Drawing.Size(144, 21);
-            this.txtrak.TabIndex = 92;
-            // 
             // label26
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(42, 320);
+            this.label26.Location = new System.Drawing.Point(42, 280);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(65, 16);
             this.label26.TabIndex = 115;
@@ -387,7 +369,7 @@
             "baik",
             "rusak"});
             this.cbkondisi.Location = new System.Drawing.Point(457, 167);
-            this.cbkondisi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbkondisi.Margin = new System.Windows.Forms.Padding(2);
             this.cbkondisi.Name = "cbkondisi";
             this.cbkondisi.Size = new System.Drawing.Size(144, 21);
             this.cbkondisi.TabIndex = 118;
@@ -398,22 +380,29 @@
             this.cbavailable.Items.AddRange(new object[] {
             "yes",
             "no"});
-            this.cbavailable.Location = new System.Drawing.Point(135, 317);
-            this.cbavailable.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbavailable.Location = new System.Drawing.Point(135, 277);
+            this.cbavailable.Margin = new System.Windows.Forms.Padding(2);
             this.cbavailable.Name = "cbavailable";
             this.cbavailable.Size = new System.Drawing.Size(144, 21);
             this.cbavailable.TabIndex = 119;
+            // 
+            // lblidbukuta
+            // 
+            this.lblidbukuta.AutoSize = true;
+            this.lblidbukuta.Location = new System.Drawing.Point(323, 59);
+            this.lblidbukuta.Name = "lblidbukuta";
+            this.lblidbukuta.Size = new System.Drawing.Size(0, 13);
+            this.lblidbukuta.TabIndex = 120;
             // 
             // databukuta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblidbukuta);
             this.Controls.Add(this.cbavailable);
             this.Controls.Add(this.cbkondisi);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.txtrak);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnupdate);
             this.Controls.Add(this.btninsert);
@@ -483,10 +472,9 @@
         private System.Windows.Forms.TextBox txtjudul;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtrak;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox cbkondisi;
         private System.Windows.Forms.ComboBox cbavailable;
+        private System.Windows.Forms.Label lblidbukuta;
     }
 }

@@ -36,6 +36,7 @@ namespace Perpustakaan
             MySqlDataReader hasil = cmd.ExecuteReader();
             if(hasil.Read())
             {
+                lblidbuku.Text = hasil["id_buku"].ToString();
                 txtjudul.Text = hasil["judul"].ToString();
                 txtsub.Text = hasil["sub_judul"].ToString();
                 txtkode.Text = hasil["kode"].ToString();
@@ -142,7 +143,40 @@ namespace Perpustakaan
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
-
+            
+                MySqlCommand cmd = new MySqlCommand();
+                cmd.Connection = conn.myconnection();
+            cmd.CommandText = "update buku set judul=@judul , sub_judul=@sub_judul , nomor_panggil=@nomor_panggil , nama_DDC=@nama_DDC , subjek=@subjek , pengarang=@pengarang , penerbit=@penerbit , kota_terbit=@kota_terbit , tahun_terbit=@tahun_terbit , edisi=@edisi , volume=@volume , ISBN=@ISBN , kode=@kode , harga=@harga , bahasa=@bahasa , halaman_romawi=@halaman_romawi , halaman_arab=@halaman_arab , tinggi=@tinggi , keterangan=@keterangan , keaslian=@keaslian , kondisi=@kondisi where id_buku=@id_buku";
+            cmd.Parameters.Add(new MySqlParameter("@judul", txtjudul.Text));
+            cmd.Parameters.Add(new MySqlParameter("@sub_judul", txtharga.Text));
+            cmd.Parameters.Add(new MySqlParameter("@nomor_panggil", txtnomorpanggil.Text));
+            cmd.Parameters.Add(new MySqlParameter("@nama_DDC", txtddc.Text));
+            cmd.Parameters.Add(new MySqlParameter("@subjek", cbsubjek.SelectedText.ToString()));
+            cmd.Parameters.Add(new MySqlParameter("@pengarang", txtpengarang.Text));
+            cmd.Parameters.Add(new MySqlParameter("@penerbit", txtpenerbit.Text));
+            cmd.Parameters.Add(new MySqlParameter("@kota_terbit", txtkotaterbit.Text));
+            cmd.Parameters.Add(new MySqlParameter("@tahun_terbit", cbtahun.SelectedText.ToString()));
+            cmd.Parameters.Add(new MySqlParameter("@edisi", txtedisi.Text));
+            cmd.Parameters.Add(new MySqlParameter("@volume", txtvol.Text));
+            cmd.Parameters.Add(new MySqlParameter("@ISBN", txtisbn.Text));
+            cmd.Parameters.Add(new MySqlParameter("@kode", txtkode.Text));
+            cmd.Parameters.Add(new MySqlParameter("@harga", txtharga.Text));
+            cmd.Parameters.Add(new MySqlParameter("@bahasa", txtbahasa.Text));
+            cmd.Parameters.Add(new MySqlParameter("@halaman_romawi", txtromawi.Text));
+            cmd.Parameters.Add(new MySqlParameter("@halaman_arab", txtarab.Text));
+            cmd.Parameters.Add(new MySqlParameter("@tinggi", txttinggi.Text));
+            cmd.Parameters.Add(new MySqlParameter("@keterangan", txtketerangan.Text));
+            cmd.Parameters.Add(new MySqlParameter("@keaslian", cbasli.Text));
+            cmd.Parameters.Add(new MySqlParameter("@kondisi", cbkondisi.Text));
+            cmd.Parameters.Add(new MySqlParameter("@id_buku", lblidbuku.Text));
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("berhasil");
+            this.Hide();
+            Formbuku fb = new Formbuku();
+            if (fb.ShowDialog() == DialogResult.OK)
+            {
+                fb.ShowDialog();
+            }
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)

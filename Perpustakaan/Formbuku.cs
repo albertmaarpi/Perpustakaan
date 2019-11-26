@@ -146,6 +146,7 @@ namespace Perpustakaan
        
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            this.Hide();
             int idbuku = Convert.ToInt32(dataGridView1.CurrentRow.Cells[1].Value);
             databuku db = new databuku(idbuku);
             db.ShowDialog();

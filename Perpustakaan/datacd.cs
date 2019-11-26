@@ -35,6 +35,7 @@ namespace Perpustakaan
             MySqlDataReader hasil = cmd.ExecuteReader();
             if (hasil.Read())
             {
+                lblidcd.Text = hasil["id_cd"].ToString();
                 txtjudul.Text = hasil["judul"].ToString();
                 cbjenis.SelectedText = hasil["jenis"].ToString();
                 txtharga.Text = hasil["harga"].ToString();
@@ -111,16 +112,36 @@ namespace Perpustakaan
         private void datacd_Load(object sender, EventArgs e)
         {
             conn = new connection();
-<<<<<<< HEAD
+
             loadcd();
 
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
+        }
 
-=======
->>>>>>> d9c3d66962d633f8017190cca10bb8d115d20ad7
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = conn.myconnection();
+            cmd.CommandText = "update cd set judul=@judul , jenis=@jenis , harga=@harga , keterangan=@keterangan , kode=@kode , kondisi=@kondisi,rak=@rak where id_cd=@id_cd ";
+            cmd.Parameters.Add(new MySqlParameter("@judul", txtjudul.Text));
+            cmd.Parameters.Add(new MySqlParameter("@jenis", cbjenis.Text));
+            cmd.Parameters.Add(new MySqlParameter("@harga", txtharga.Text));
+            cmd.Parameters.Add(new MySqlParameter("@keterangan", rbketerangan.Text));
+            cmd.Parameters.Add(new MySqlParameter("@kode", txtkode.Text));
+            cmd.Parameters.Add(new MySqlParameter("@kondisi", cbkondisi.Text));
+            cmd.Parameters.Add(new MySqlParameter("@rak", txtrak.Text));
+            cmd.Parameters.Add(new MySqlParameter("@id_cd", lblidcd.Text));
+            cmd.ExecuteNonQuery();
+            MessageBox.Show("berhasil");
+            this.Hide();
+            Formcd fc = new Formcd();
+            if (fc.ShowDialog() == DialogResult.OK)
+            {
+                fc.ShowDialog();
+            }
         }
     }
 }
