@@ -40,36 +40,41 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 132);
+            this.dataGridView1.Location = new System.Drawing.Point(32, 107);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(857, 398);
+            this.dataGridView1.Size = new System.Drawing.Size(643, 323);
             this.dataGridView1.TabIndex = 0;
             // 
             // btnsearch
             // 
-            this.btnsearch.Location = new System.Drawing.Point(454, 96);
+            this.btnsearch.Location = new System.Drawing.Point(340, 78);
+            this.btnsearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnsearch.Name = "btnsearch";
-            this.btnsearch.Size = new System.Drawing.Size(93, 30);
+            this.btnsearch.Size = new System.Drawing.Size(70, 24);
             this.btnsearch.TabIndex = 1;
             this.btnsearch.Text = "search";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // tbnrp
             // 
             this.tbnrp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tbnrp.Location = new System.Drawing.Point(118, 96);
+            this.tbnrp.Location = new System.Drawing.Point(88, 78);
+            this.tbnrp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbnrp.Name = "tbnrp";
-            this.tbnrp.Size = new System.Drawing.Size(176, 30);
+            this.tbnrp.Size = new System.Drawing.Size(133, 26);
             this.tbnrp.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(49, 96);
+            this.label1.Location = new System.Drawing.Point(37, 78);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 25);
+            this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "NRP :";
             // 
@@ -77,31 +82,34 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
-            this.label2.Location = new System.Drawing.Point(46, 28);
+            this.label2.Location = new System.Drawing.Point(34, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(373, 46);
+            this.label2.Size = new System.Drawing.Size(300, 37);
             this.label2.TabIndex = 4;
             this.label2.Text = "History peminjaman";
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(313, 96);
+            this.comboBox1.Location = new System.Drawing.Point(235, 78);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.TabIndex = 5;
             // 
             // formhistory
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 561);
+            this.ClientSize = new System.Drawing.Size(720, 456);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbnrp);
             this.Controls.Add(this.btnsearch);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "formhistory";
             this.Text = "formhistory";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

@@ -83,5 +83,32 @@ namespace Perpustakaan
                 MessageBox.Show(ex.Message.ToString());
             }
         }
+
+        private void peminjamanBukuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void peminjamanBukuTaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            peminjamanbuku pb = new peminjamanbuku();
+            if (pb.ShowDialog() == DialogResult.OK)
+            {
+                pb.ShowDialog();
+
+            }
+        }
+
+        private void pengembalianToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            formpengembalian fb = new formpengembalian();
+            if (fb.ShowDialog() == DialogResult.OK)
+            {
+                fb.ShowDialog();
+
+            }
+        }
     }
 }
