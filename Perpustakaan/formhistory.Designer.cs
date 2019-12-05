@@ -33,7 +33,7 @@
             this.tbnrp = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbkategori = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,12 +48,13 @@
             // 
             // btnsearch
             // 
-            this.btnsearch.Location = new System.Drawing.Point(454, 96);
+            this.btnsearch.Location = new System.Drawing.Point(492, 94);
             this.btnsearch.Name = "btnsearch";
             this.btnsearch.Size = new System.Drawing.Size(93, 30);
             this.btnsearch.TabIndex = 1;
             this.btnsearch.Text = "search";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // tbnrp
             // 
@@ -83,20 +84,25 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "History peminjaman";
             // 
-            // comboBox1
+            // cbkategori
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(313, 96);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 5;
+            this.cbkategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cbkategori.FormattingEnabled = true;
+            this.cbkategori.Items.AddRange(new object[] {
+            "buku",
+            "buku TA",
+            "CD"});
+            this.cbkategori.Location = new System.Drawing.Point(300, 96);
+            this.cbkategori.Name = "cbkategori";
+            this.cbkategori.Size = new System.Drawing.Size(173, 28);
+            this.cbkategori.TabIndex = 5;
             // 
             // formhistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 561);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbkategori);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbnrp);
@@ -104,6 +110,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "formhistory";
             this.Text = "formhistory";
+            this.Load += new System.EventHandler(this.formhistory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -117,6 +124,6 @@
         private System.Windows.Forms.TextBox tbnrp;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbkategori;
     }
 }
