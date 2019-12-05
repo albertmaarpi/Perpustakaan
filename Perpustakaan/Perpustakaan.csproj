@@ -84,6 +84,18 @@
     <Compile Include="Formcd.Designer.cs">
       <DependentUpon>Formcd.cs</DependentUpon>
     </Compile>
+    <Compile Include="formhistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formhistory.Designer.cs">
+      <DependentUpon>formhistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formpengembalian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formpengembalian.Designer.cs">
+      <DependentUpon>formpengembalian.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +157,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formcd.resx">
       <DependentUpon>Formcd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formhistory.resx">
+      <DependentUpon>formhistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formpengembalian.resx">
+      <DependentUpon>formpengembalian.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
