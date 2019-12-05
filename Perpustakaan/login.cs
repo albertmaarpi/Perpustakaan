@@ -42,16 +42,24 @@ namespace Perpustakaan
                     Formbuku fb = new Formbuku();
                     fb.ShowDialog();
                 }
-                else
+                else if(jabatan==2)
                 {
                     MessageBox.Show("halo staff "+username);
                     this.Hide();
                     pencarianbuku pb = new pencarianbuku();
                     pb.ShowDialog();
                 }
+                else if (jabatan == 3)
+                {
+                    MessageBox.Show("halo operator " + username);
+                    this.Hide();
+                    peminjamanbuku pb = new peminjamanbuku();
+                    pb.ShowDialog();
+                }
+
                 //MessageBox.Show("berhasil login sebagai "+username+" dengan jabatan : "+reader["jabatan"]);
-               
-             
+
+
             }
             else
             {

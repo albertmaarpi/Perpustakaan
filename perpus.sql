@@ -53,7 +53,7 @@ CREATE TABLE `buku` (
 
 insert  into `buku`(`id_buku`,`judul`,`sub_judul`,`nomor_panggil`,`nama_DDC`,`subjek`,`pengarang`,`penerbit`,`kota_terbit`,`tahun_terbit`,`edisi`,`volume`,`ISBN`,`kode`,`harga`,`bahasa`,`halaman_romawi`,`halaman_arab`,`tinggi`,`keterangan`,`keaslian`,`kondisi`,`status`,`tanggal_datang`) values 
 (1,'heho','haha','haha','haha','','haha','haha','haha','','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha','haha',NULL,'2019-11-14 10:09:48'),
-(3,'as','sdas','sdas','sdas','ss','asdasad','das','asda','0000-','asd','sd','asd','sdas','asd','asd','asd','asd','s','sd','ssds','sadsa',0,'2019-11-14 10:09:48');
+(3,'as','sdas','sdas','sdas','ss','asdasad','das','asda','0000-','asd','sd','asd','1223','asd','asd','asd','asd','s','sd','ssds','sadsa',0,'2019-11-14 10:09:48');
 
 /*Table structure for table `buku_ta` */
 
@@ -105,6 +105,24 @@ CREATE TABLE `cd` (
 insert  into `cd`(`id_cd`,`judul`,`jenis`,`harga`,`keterangan`,`kode`,`kondisi`,`rak`,`tanggal_datang`,`status`) values 
 (1,'asa','non-fiksi','asd','asdasdd','asd','baik','sad','2019-11-21 10:59:18',1);
 
+/*Table structure for table `mahasiswa` */
+
+DROP TABLE IF EXISTS `mahasiswa`;
+
+CREATE TABLE `mahasiswa` (
+  `id_mhs` int(11) NOT NULL AUTO_INCREMENT,
+  `nama_mhs` varchar(20) DEFAULT NULL,
+  `nrp` varchar(11) DEFAULT NULL,
+  PRIMARY KEY (`id_mhs`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+
+/*Data for the table `mahasiswa` */
+
+insert  into `mahasiswa`(`id_mhs`,`nama_mhs`,`nrp`) values 
+(1,'daud','218011677'),
+(2,'albert','218011678'),
+(3,'ko mikhael','218011676');
+
 /*Table structure for table `peminjaman` */
 
 DROP TABLE IF EXISTS `peminjaman`;
@@ -112,14 +130,19 @@ DROP TABLE IF EXISTS `peminjaman`;
 CREATE TABLE `peminjaman` (
   `id_pinjam` int(11) NOT NULL AUTO_INCREMENT,
   `tgl_peminjaman` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `deadline` datetime DEFAULT NULL,
   `status` tinyint(4) DEFAULT 1,
   `perpanjangan` tinyint(4) DEFAULT 0,
   `tgl_balik` datetime DEFAULT NULL,
+  `kode_buku` varchar(20) DEFAULT NULL,
+  `kode_peminjam` varchar(11) DEFAULT NULL,
   PRIMARY KEY (`id_pinjam`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `peminjaman` */
+
+insert  into `peminjaman`(`id_pinjam`,`tgl_peminjaman`,`status`,`perpanjangan`,`tgl_balik`,`kode_buku`,`kode_peminjam`) values 
+(1,'2019-12-05 09:36:51',1,0,NULL,'1223','218011677'),
+(2,'2019-12-05 09:36:55',1,0,NULL,'1223','218011678');
 
 /*Table structure for table `userperpus` */
 
@@ -133,13 +156,14 @@ CREATE TABLE `userperpus` (
   `status` tinyint(1) NOT NULL DEFAULT 1,
   `jabatan` int(1) NOT NULL DEFAULT 1,
   PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 /*Data for the table `userperpus` */
 
 insert  into `userperpus`(`id_user`,`username`,`password`,`nama`,`status`,`jabatan`) values 
 (6,'daud','daud','daud',1,1),
-(7,'albert','albert','albert',1,2);
+(7,'albert','albert','albert',1,2),
+(8,'op','op','op',1,3);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
