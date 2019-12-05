@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MySql.Data.MySqlClient;
 namespace Perpustakaan
 {
     public partial class peminjamanTA : Form
@@ -15,6 +15,11 @@ namespace Perpustakaan
         public peminjamanTA()
         {
             InitializeComponent();
+        }
+
+        private void peminjamanTA_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
