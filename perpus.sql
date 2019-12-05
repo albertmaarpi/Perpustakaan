@@ -112,9 +112,10 @@ DROP TABLE IF EXISTS `peminjaman`;
 CREATE TABLE `peminjaman` (
   `id_pinjam` int(11) NOT NULL AUTO_INCREMENT,
   `tgl_peminjaman` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `tgl_balik` datetime DEFAULT NULL,
+  `deadline` datetime DEFAULT NULL,
   `status` tinyint(4) DEFAULT 1,
   `perpanjangan` tinyint(4) DEFAULT 0,
+  `tgl_balik` datetime DEFAULT NULL,
   PRIMARY KEY (`id_pinjam`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
