@@ -98,6 +98,7 @@
             this.btnsearch.TabIndex = 19;
             this.btnsearch.Text = "search";
             this.btnsearch.UseVisualStyleBackColor = true;
+            this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
             // 
             // btnpinjam
             // 
@@ -107,6 +108,7 @@
             this.btnpinjam.TabIndex = 18;
             this.btnpinjam.Text = "pinjam";
             this.btnpinjam.UseVisualStyleBackColor = true;
+            this.btnpinjam.Click += new System.EventHandler(this.btnpinjam_Click);
             // 
             // tbkode
             // 
@@ -171,6 +173,7 @@
             this.Controls.Add(this.label1);
             this.Name = "peminjamanTA";
             this.Text = "peminjamanTA";
+            this.Load += new System.EventHandler(this.peminjamanTA_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
